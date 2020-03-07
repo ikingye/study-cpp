@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/docs/appendix/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/basic/practice/spec/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/appendix/interview/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/design/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/appendix/interview/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/appendix/interview/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/source/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/appendix/interview/expert/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/appendix/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/basic/practice/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+  </url>
+  
+</urlset>
