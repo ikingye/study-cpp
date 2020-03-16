@@ -85,6 +85,17 @@
     </item>
     
     <item>
+      <title>指针</title>
+      <link>https://ikingye.github.io/study-cpp/docs/basic/grammar/pointer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-cpp/docs/basic/grammar/pointer/</guid>
+      <description>C++ 指针 智能指针    指针类别 支持 备注     unique_ptr C++ 11 拥有独有对象所有权语义的智能指针   shared_ptr C++ 11 拥有共享对象所有权语义的智能指针   weak_ptr C++ 11 到 std::shared_ptr 所管理对象的弱引用   auto_ptr C++ 17 中移除 拥有严格对象所有权语义的智能指针    unique_ptr std::unique_ptr 是通过指针占有并管理另一对象，并在 unique_ptr 离开作用域时释放该对象的智能指针。在下列两者之一发生时用关联的删除器释放对象：
+ 销毁了管理的 unique_ptr 对象 通过 operator= 或 reset () 赋值另一指针给管理的 unique_ptr 对象。  shared_ptr std::shared_ptr 是通过指针保持对象共享所有权的智能指针。多个 shared_ptr 对象可占有同一对象。下列情况之一出现时销毁对象并解分配其内存：
+ 最后剩下的占有对象的 shared_ptr 被销毁； 最后剩下的占有对象的 shared_ptr 被通过 operator= 或 reset () 赋值为另一指针。  有两种方式创建 shared_ptr ：</description>
+    </item>
+    
+    <item>
       <title>命名空间</title>
       <link>https://ikingye.github.io/study-cpp/docs/basic/grammar/namespace/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
