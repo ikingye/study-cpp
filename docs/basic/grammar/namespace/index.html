@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Tags"><meta property="og:title" content="Tags" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://ikingye.github.io/study-cpp/tags/" />
-
-<title>Tags | C&#43;&#43; 笔记</title>
+<meta name="description" content="命名空间"><meta property="og:title" content="命名空间" />
+<meta property="og:description" content="C&#43;&#43; 命名空间 // 命名空间为变量、函数和其他声明提供了分离的的作用域。 // 命名空间可以嵌套使用。  namespace First { namespace Nested { void foo() { printf(&#34;This is First::Nested::foo\n&#34;); } } // 结束嵌套的命名空间Nested } // 结束命名空间First  namespace Second { void foo() { printf(&#34;This is Second::foo\n&#34;) } } void foo() { printf(&#34;This is global foo\n&#34;); } int main() { // 如果没有特别指定，就从“Second”中取得所需的内容。  using namespace Second; foo(); // 显示“This is Second::foo”  First::Nested::foo(); // 显示“This is First::Nested::foo”  ::foo(); // 显示“This is global foo” } " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ikingye.github.io/study-cpp/docs/basic/grammar/namespace/" />
+<meta property="article:modified_time" content="2020-03-16T20:09:31+08:00" />
+<title>命名空间 | C&#43;&#43; 笔记</title>
 <link rel="icon" href="/study-cpp/favicon.png" type="image/x-icon">
 
 
@@ -18,7 +18,6 @@
 
 <script defer src="/study-cpp/en.search.min.f1bafe51ea48500e0aba1eca0924f13e6a9f35c8d7dd321517d2c093e763dd11.js" integrity="sha256-8br&#43;UepIUA4Kuh7KCSTxPmqfNcjX3TIVF9LAk&#43;dj3RE="></script>
 
-<link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/study-cpp/tags/index.xml" title="C++ 笔记" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -145,7 +144,7 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/study-cpp/docs/basic/grammar/namespace/" >
+  <a href="/study-cpp/docs/basic/grammar/namespace/"  class="active">
       命名空间
   </a>
 
@@ -463,7 +462,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/study-cpp/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Tags</strong>
+  <strong>命名空间</strong>
 
   <label for="toc-control">
     <img src="/study-cpp/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -475,27 +474,9 @@ https://github.com/alex-shpak/hugo-book
     <input type="checkbox" class="hidden" id="toc-control" />
     <aside class="hidden clearfix">
       
-  <nav>
+  <nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
+    <li><a href="#c-">C++ 命名空间</a></li>
   </ul>
 </nav>
 
@@ -507,11 +488,41 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-<article class="markdown">
-  <h1>Tags</h1>
-  
-  
-</article>
+<article class="markdown"><h1 id="c-">C++ 命名空间</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">// 命名空间为变量、函数和其他声明提供了分离的的作用域。
+</span><span style="color:#75715e"></span><span style="color:#75715e">// 命名空间可以嵌套使用。
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">namespace</span> First {
+    <span style="color:#66d9ef">namespace</span> Nested {
+        <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">foo</span>()
+        {
+            printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">This is First::Nested::foo</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+        }
+    } <span style="color:#75715e">// 结束嵌套的命名空间Nested
+</span><span style="color:#75715e"></span>} <span style="color:#75715e">// 结束命名空间First
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">namespace</span> Second {
+    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">foo</span>()
+    {
+        printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">This is Second::foo</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+    }
+}
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">foo</span>()
+{
+    printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">This is global foo</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+}
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+{
+    <span style="color:#75715e">// 如果没有特别指定，就从“Second”中取得所需的内容。
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> Second;
+
+    foo(); <span style="color:#75715e">// 显示“This is Second::foo”
+</span><span style="color:#75715e"></span>    First<span style="color:#f92672">:</span><span style="color:#f92672">:</span>Nested<span style="color:#f92672">:</span><span style="color:#f92672">:</span>foo(); <span style="color:#75715e">// 显示“This is First::Nested::foo”
+</span><span style="color:#75715e"></span>    <span style="color:#f92672">:</span><span style="color:#f92672">:</span>foo(); <span style="color:#75715e">// 显示“This is global foo”
+</span><span style="color:#75715e"></span>}
+</code></pre></div></article>
  
       
 
@@ -521,12 +532,31 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/ikingye/note/commit/793e69cd3128cff5ea1953d9b41681e1f3c6c56f" title='Last modified by yewang | 2020-03-16' target="_blank" rel="noopener">
+      <img src="/study-cpp/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-03-16</span>
+    </a>
+  </div>
+
 
 
 </div>
 
  
         
+  
+  <div class="book-comments">
+<script src="https://utteranc.es/client.js"
+  repo="ikingye/study-cpp"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script>
+
+</div>
   
  
       </footer>
@@ -538,27 +568,9 @@ https://github.com/alex-shpak/hugo-book
     
     <aside class="book-toc">
       
-  <nav>
+  <nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
+    <li><a href="#c-">C++ 命名空间</a></li>
   </ul>
 </nav>
 

@@ -4,12 +4,15 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Tags"><meta property="og:title" content="Tags" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://ikingye.github.io/study-cpp/tags/" />
-
-<title>Tags | C&#43;&#43; 笔记</title>
+<meta name="description" content="引用"><meta property="og:title" content="引用" />
+<meta property="og:description" content="C&#43;&#43; 引用   引用是一种特殊的指针类型，一旦被定义就不能重新赋值，并且不能被设置为空值。
+  使用引用时的语法与原变量相同
+ 对引用类型进行解引用时，不需要使用 * 赋值时也不需要用 &amp; 来取地址  using namespace std; string foo = &#34;I am foo&#34;; string bar = &#34;I am bar&#34;; string&amp; fooRef = foo; // 建立了一个对foo的引用。 fooRef &#43;= &#34;. Hi!&#34;; // 通过引用来修改foo的值 cout &lt;&lt; fooRef; // &#34;I am foo. Hi!&#34; // 这句话的并不会改变fooRef的指向，其效果与“foo = bar”相同。 // 也就是说，在执行这条语句之后，foo == &#34;I am bar&#34;。 fooRef = bar;   不能修改一个常量引用的值
+const string&amp; barRef = bar; // 建立指向bar的常量引用。 // 和C语言中一样，（指针和引用）声明为常量时，对应的值不能被修改。 barRef &#43;= &#34;." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ikingye.github.io/study-cpp/docs/basic/grammar/reference/" />
+<meta property="article:modified_time" content="2020-03-16T20:09:31+08:00" />
+<title>引用 | C&#43;&#43; 笔记</title>
 <link rel="icon" href="/study-cpp/favicon.png" type="image/x-icon">
 
 
@@ -18,7 +21,6 @@
 
 <script defer src="/study-cpp/en.search.min.f1bafe51ea48500e0aba1eca0924f13e6a9f35c8d7dd321517d2c093e763dd11.js" integrity="sha256-8br&#43;UepIUA4Kuh7KCSTxPmqfNcjX3TIVF9LAk&#43;dj3RE="></script>
 
-<link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/study-cpp/tags/index.xml" title="C++ 笔记" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -155,7 +157,7 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/study-cpp/docs/basic/grammar/reference/" >
+  <a href="/study-cpp/docs/basic/grammar/reference/"  class="active">
       引用
   </a>
 
@@ -463,7 +465,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/study-cpp/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Tags</strong>
+  <strong>引用</strong>
 
   <label for="toc-control">
     <img src="/study-cpp/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -475,27 +477,9 @@ https://github.com/alex-shpak/hugo-book
     <input type="checkbox" class="hidden" id="toc-control" />
     <aside class="hidden clearfix">
       
-  <nav>
+  <nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
+    <li><a href="#c-">C++ 引用</a></li>
   </ul>
 </nav>
 
@@ -507,10 +491,36 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-<article class="markdown">
-  <h1>Tags</h1>
-  
-  
+<article class="markdown"><h1 id="c-">C++ 引用</h1>
+<ul>
+<li>
+<p>引用是一种特殊的指针类型，一旦被定义就不能重新赋值，并且不能被设置为空值。</p>
+</li>
+<li>
+<p>使用引用时的语法与原变量相同</p>
+<ul>
+<li>对引用类型进行解引用时，不需要使用 <code>*</code></li>
+<li>赋值时也不需要用 <code>&amp;</code> 来取地址</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+
+string foo <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">I am foo</span><span style="color:#e6db74">&#34;</span>;
+string bar <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">I am bar</span><span style="color:#e6db74">&#34;</span>;
+
+string<span style="color:#f92672">&amp;</span> fooRef <span style="color:#f92672">=</span> foo; <span style="color:#75715e">// 建立了一个对foo的引用。
+</span><span style="color:#75715e"></span>fooRef <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">. Hi!</span><span style="color:#e6db74">&#34;</span>; <span style="color:#75715e">// 通过引用来修改foo的值
+</span><span style="color:#75715e"></span>cout <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> fooRef; <span style="color:#75715e">// &#34;I am foo. Hi!&#34;
+</span><span style="color:#75715e"></span><span style="color:#75715e">// 这句话的并不会改变fooRef的指向，其效果与“foo = bar”相同。
+</span><span style="color:#75715e"></span><span style="color:#75715e">// 也就是说，在执行这条语句之后，foo == &#34;I am bar&#34;。
+</span><span style="color:#75715e"></span>fooRef <span style="color:#f92672">=</span> bar;
+</code></pre></div></li>
+<li>
+<p>不能修改一个常量引用的值</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">const</span> string<span style="color:#f92672">&amp;</span> barRef <span style="color:#f92672">=</span> bar; <span style="color:#75715e">// 建立指向bar的常量引用。
+</span><span style="color:#75715e"></span><span style="color:#75715e">// 和C语言中一样，（指针和引用）声明为常量时，对应的值不能被修改。
+</span><span style="color:#75715e"></span>barRef <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">. Hi!</span><span style="color:#e6db74">&#34;</span>; <span style="color:#75715e">// 这是错误的，不能修改一个常量引用的值。
+</span></code></pre></div></li>
+</ul>
 </article>
  
       
@@ -521,12 +531,31 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/ikingye/note/commit/793e69cd3128cff5ea1953d9b41681e1f3c6c56f" title='Last modified by yewang | 2020-03-16' target="_blank" rel="noopener">
+      <img src="/study-cpp/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-03-16</span>
+    </a>
+  </div>
+
 
 
 </div>
 
  
         
+  
+  <div class="book-comments">
+<script src="https://utteranc.es/client.js"
+  repo="ikingye/study-cpp"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script>
+
+</div>
   
  
       </footer>
@@ -538,27 +567,9 @@ https://github.com/alex-shpak/hugo-book
     
     <aside class="book-toc">
       
-  <nav>
+  <nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
+    <li><a href="#c-">C++ 引用</a></li>
   </ul>
 </nav>
 

@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Tags"><meta property="og:title" content="Tags" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://ikingye.github.io/study-cpp/tags/" />
-
-<title>Tags | C&#43;&#43; 笔记</title>
+<meta name="description" content="函数"><meta property="og:title" content="函数" />
+<meta property="og:description" content="函数 函数参数 参数默认值
+// 你可以为函数的参数指定默认值， // 默认参数必须放在所有的常规参数之后。 void doSomethingWithInts(int a, int b = 1, int c = 4) { } 函数重载 // C&#43;&#43;支持函数重载，你可以定义一组名称相同而参数不同的函数 void print(char const* myString) { printf(&#34;String %s\n&#34;, myString); } void print(int myInt) { printf(&#34;My int is %d&#34;, myInt); } int main() { print(&#34;Hello&#34;); // 解析为 void print(const char*)  print(15); // 解析为 void print(int) } " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ikingye.github.io/study-cpp/docs/basic/grammar/function/" />
+<meta property="article:modified_time" content="2020-03-16T20:09:31+08:00" />
+<title>函数 | C&#43;&#43; 笔记</title>
 <link rel="icon" href="/study-cpp/favicon.png" type="image/x-icon">
 
 
@@ -18,7 +19,6 @@
 
 <script defer src="/study-cpp/en.search.min.f1bafe51ea48500e0aba1eca0924f13e6a9f35c8d7dd321517d2c093e763dd11.js" integrity="sha256-8br&#43;UepIUA4Kuh7KCSTxPmqfNcjX3TIVF9LAk&#43;dj3RE="></script>
 
-<link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/study-cpp/tags/index.xml" title="C++ 笔记" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -135,7 +135,7 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/study-cpp/docs/basic/grammar/function/" >
+  <a href="/study-cpp/docs/basic/grammar/function/"  class="active">
       函数
   </a>
 
@@ -463,7 +463,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/study-cpp/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Tags</strong>
+  <strong>函数</strong>
 
   <label for="toc-control">
     <img src="/study-cpp/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -475,27 +475,14 @@ https://github.com/alex-shpak/hugo-book
     <input type="checkbox" class="hidden" id="toc-control" />
     <aside class="hidden clearfix">
       
-  <nav>
+  <nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
+    <li><a href="#heading">函数</a>
       <ul>
-      
+        <li><a href="#heading-1">函数参数</a></li>
+        <li><a href="#heading-2">函数重载</a></li>
       </ul>
     </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
   </ul>
 </nav>
 
@@ -507,11 +494,32 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-<article class="markdown">
-  <h1>Tags</h1>
-  
-  
-</article>
+<article class="markdown"><h1 id="heading">函数</h1>
+<h2 id="heading-1">函数参数</h2>
+<p>参数默认值</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">// 你可以为函数的参数指定默认值，
+</span><span style="color:#75715e"></span><span style="color:#75715e">// 默认参数必须放在所有的常规参数之后。
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">doSomethingWithInts</span>(<span style="color:#66d9ef">int</span> a, <span style="color:#66d9ef">int</span> b <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#66d9ef">int</span> c <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>)
+{
+}
+</code></pre></div><h2 id="heading-2">函数重载</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">// C++支持函数重载，你可以定义一组名称相同而参数不同的函数
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">print</span>(<span style="color:#66d9ef">char</span> <span style="color:#66d9ef">const</span><span style="color:#f92672">*</span> myString)
+{
+    printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">String %s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, myString);
+}
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">print</span>(<span style="color:#66d9ef">int</span> myInt)
+{
+    printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">My int is %d</span><span style="color:#e6db74">&#34;</span>, myInt);
+}
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+{
+    print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Hello</span><span style="color:#e6db74">&#34;</span>); <span style="color:#75715e">// 解析为 void print(const char*)
+</span><span style="color:#75715e"></span>    print(<span style="color:#ae81ff">15</span>); <span style="color:#75715e">// 解析为 void print(int)
+</span><span style="color:#75715e"></span>}
+</code></pre></div></article>
  
       
 
@@ -521,12 +529,31 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/ikingye/note/commit/793e69cd3128cff5ea1953d9b41681e1f3c6c56f" title='Last modified by yewang | 2020-03-16' target="_blank" rel="noopener">
+      <img src="/study-cpp/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-03-16</span>
+    </a>
+  </div>
+
 
 
 </div>
 
  
         
+  
+  <div class="book-comments">
+<script src="https://utteranc.es/client.js"
+  repo="ikingye/study-cpp"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script>
+
+</div>
   
  
       </footer>
@@ -538,27 +565,14 @@ https://github.com/alex-shpak/hugo-book
     
     <aside class="book-toc">
       
-  <nav>
+  <nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
+    <li><a href="#heading">函数</a>
       <ul>
-      
+        <li><a href="#heading-1">函数参数</a></li>
+        <li><a href="#heading-2">函数重载</a></li>
       </ul>
     </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
   </ul>
 </nav>
 
