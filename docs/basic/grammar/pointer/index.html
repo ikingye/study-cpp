@@ -503,12 +503,12 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#c-">C++ 指针</a>
+    <li><a href="#c-指针">C++ 指针</a>
       <ul>
-        <li><a href="#heading">智能指针</a>
+        <li><a href="#智能指针">智能指针</a>
           <ul>
-            <li><a href="#unique-ptr">unique_ptr</a></li>
-            <li><a href="#shared-ptr">shared_ptr</a></li>
+            <li><a href="#unique_ptr">unique_ptr</a></li>
+            <li><a href="#shared_ptr">shared_ptr</a></li>
           </ul>
         </li>
       </ul>
@@ -523,8 +523,8 @@ https://github.com/alex-shpak/hugo-book
       </header>
 
       
-<article class="markdown"><h1 id="c-">C++ 指针</h1>
-<h2 id="heading">智能指针</h2>
+<article class="markdown"><h1 id="c-指针">C++ 指针</h1>
+<h2 id="智能指针">智能指针</h2>
 <table>
 <thead>
 <tr>
@@ -556,13 +556,13 @@ https://github.com/alex-shpak/hugo-book
 </tr>
 </tbody>
 </table>
-<h3 id="unique-ptr">unique_ptr</h3>
+<h3 id="unique_ptr">unique_ptr</h3>
 <p>std::unique_ptr 是通过指针占有并管理另一对象，并在 unique_ptr 离开作用域时释放该对象的智能指针。在下列两者之一发生时用关联的删除器释放对象：</p>
 <ul>
 <li>销毁了管理的 unique_ptr 对象</li>
 <li>通过 operator= 或 reset () 赋值另一指针给管理的 unique_ptr 对象。</li>
 </ul>
-<h3 id="shared-ptr">shared_ptr</h3>
+<h3 id="shared_ptr">shared_ptr</h3>
 <p>std::shared_ptr 是通过指针保持对象共享所有权的智能指针。多个 shared_ptr 对象可占有同一对象。下列情况之一出现时销毁对象并解分配其内存：</p>
 <ul>
 <li>最后剩下的占有对象的 shared_ptr 被销毁；</li>
@@ -623,12 +623,12 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#c-">C++ 指针</a>
+    <li><a href="#c-指针">C++ 指针</a>
       <ul>
-        <li><a href="#heading">智能指针</a>
+        <li><a href="#智能指针">智能指针</a>
           <ul>
-            <li><a href="#unique-ptr">unique_ptr</a></li>
-            <li><a href="#shared-ptr">shared_ptr</a></li>
+            <li><a href="#unique_ptr">unique_ptr</a></li>
+            <li><a href="#shared_ptr">shared_ptr</a></li>
           </ul>
         </li>
       </ul>

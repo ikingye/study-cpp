@@ -501,7 +501,7 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#c-">C++ 命名空间</a></li>
+    <li><a href="#c-命名空间">C++ 命名空间</a></li>
   </ul>
 </nav>
 
@@ -512,15 +512,15 @@ https://github.com/alex-shpak/hugo-book
       </header>
 
       
-<article class="markdown"><h1 id="c-">C++ 命名空间</h1>
+<article class="markdown"><h1 id="c-命名空间">C++ 命名空间</h1>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">// 命名空间为变量、函数和其他声明提供了分离的的作用域。
-</span><span style="color:#75715e"></span><span style="color:#75715e">// 命名空间可以嵌套使用。
+</span><span style="color:#75715e">// 命名空间可以嵌套使用。
 </span><span style="color:#75715e"></span>
 <span style="color:#66d9ef">namespace</span> First {
     <span style="color:#66d9ef">namespace</span> Nested {
         <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">foo</span>()
         {
-            printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">This is First::Nested::foo</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+            printf(<span style="color:#e6db74">&#34;This is First::Nested::foo</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
         }
     } <span style="color:#75715e">// 结束嵌套的命名空间Nested
 </span><span style="color:#75715e"></span>} <span style="color:#75715e">// 结束命名空间First
@@ -528,13 +528,13 @@ https://github.com/alex-shpak/hugo-book
 <span style="color:#66d9ef">namespace</span> Second {
     <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">foo</span>()
     {
-        printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">This is Second::foo</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+        printf(<span style="color:#e6db74">&#34;This is Second::foo</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
     }
 }
 
 <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">foo</span>()
 {
-    printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">This is global foo</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+    printf(<span style="color:#e6db74">&#34;This is global foo</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
 }
 
 <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
@@ -543,8 +543,8 @@ https://github.com/alex-shpak/hugo-book
 </span><span style="color:#75715e"></span>    <span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> Second;
 
     foo(); <span style="color:#75715e">// 显示“This is Second::foo”
-</span><span style="color:#75715e"></span>    First<span style="color:#f92672">:</span><span style="color:#f92672">:</span>Nested<span style="color:#f92672">:</span><span style="color:#f92672">:</span>foo(); <span style="color:#75715e">// 显示“This is First::Nested::foo”
-</span><span style="color:#75715e"></span>    <span style="color:#f92672">:</span><span style="color:#f92672">:</span>foo(); <span style="color:#75715e">// 显示“This is global foo”
+</span><span style="color:#75715e"></span>    First<span style="color:#f92672">::</span>Nested<span style="color:#f92672">::</span>foo(); <span style="color:#75715e">// 显示“This is First::Nested::foo”
+</span><span style="color:#75715e"></span>    <span style="color:#f92672">::</span>foo(); <span style="color:#75715e">// 显示“This is global foo”
 </span><span style="color:#75715e"></span>}
 </code></pre></div></article>
  
@@ -591,7 +591,7 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#c-">C++ 命名空间</a></li>
+    <li><a href="#c-命名空间">C++ 命名空间</a></li>
   </ul>
 </nav>
 
