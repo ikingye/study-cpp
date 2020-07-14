@@ -4,17 +4,18 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="C&#43;&#43; 命名空间 #  // 命名空间为变量、函数和其他声明提供了分离的的作用域。 // 命名空间可以嵌套使用。  namespace First { namespace Nested { void foo() { printf(&#34;This is First::Nested::foo\n&#34;); } } // 结束嵌套的命名空间Nested } // 结束命名空间First  namespace Second { void foo() { printf(&#34;This is Second::foo\n&#34;) } } void foo() { printf(&#34;This is global foo\n&#34;); } int main() { // 如果没有特别指定，就从“Second”中取得所需的内容。  using namespace Second; foo(); // 显示“This is Second::foo”  First::Nested::foo(); // 显示“This is First::Nested::foo”  ::foo(); // 显示“This is global foo” } ">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="命名空间" />
-<meta property="og:description" content="C&#43;&#43; 命名空间 #  // 命名空间为变量、函数和其他声明提供了分离的的作用域。 // 命名空间可以嵌套使用。  namespace First { namespace Nested { void foo() { printf(&#34;This is First::Nested::foo\n&#34;); } } // 结束嵌套的命名空间Nested } // 结束命名空间First  namespace Second { void foo() { printf(&#34;This is Second::foo\n&#34;) } } void foo() { printf(&#34;This is global foo\n&#34;); } int main() { // 如果没有特别指定，就从“Second”中取得所需的内容。  using namespace Second; foo(); // 显示“This is Second::foo”  First::Nested::foo(); // 显示“This is First::Nested::foo”  ::foo(); // 显示“This is global foo” } " />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://ikingye.github.io/study-cpp/docs/basic/grammar/namespace/" />
-<meta property="article:modified_time" content="2020-03-16T20:09:31+08:00" />
-<title>命名空间 | C&#43;&#43; 笔记</title>
+<meta name="description" content="代码片段 #  ">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="代码片段" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ikingye.github.io/study-cpp/docs/basic/snippet/" />
+
+<title>代码片段 | C&#43;&#43; 笔记</title>
 <link rel="manifest" href="/study-cpp/manifest.json">
 <link rel="icon" href="/study-cpp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/study-cpp/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
 <script defer src="/study-cpp/en.search.min.fc4023cc7d6c9555111a54595b470343af87ae559d2a43979d4d690f030e1b3c.js" integrity="sha256-/EAjzH1slVURGlRZW0cDQ6&#43;HrlWdKkOXnU1pDwMOGzw="></script>
+<link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/study-cpp/docs/basic/snippet/index.xml" title="C++ 笔记" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -160,7 +161,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/basic/grammar/namespace/" class="active">命名空间</a>
+    <a href="/study-cpp/docs/basic/grammar/namespace/" class="">命名空间</a>
   
 
         </li>
@@ -245,7 +246,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/basic/snippet/" class="collapsed ">代码片段</a>
+    <a href="/study-cpp/docs/basic/snippet/" class="collapsed active">代码片段</a>
   
 
           
@@ -253,6 +254,10 @@ https://github.com/alex-shpak/hugo-book
   
   
 
+  
+  <ul>
+    
+  </ul>
   
 
         </li>
@@ -423,7 +428,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/study-cpp/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>命名空间</strong>
+  <strong>代码片段</strong>
 
   <label for="toc-control">
     
@@ -438,7 +443,7 @@ https://github.com/alex-shpak/hugo-book
     
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#c-命名空间">C++ 命名空间</a></li>
+    <li><a href="#代码片段">代码片段</a></li>
   </ul>
 </nav>
 
@@ -450,44 +455,11 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="c-命名空间">
-  C++ 命名空间
-  <a class="anchor" href="#c-%e5%91%bd%e5%90%8d%e7%a9%ba%e9%97%b4">#</a>
+  <article class="markdown"><h1 id="代码片段">
+  代码片段
+  <a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%89%87%e6%ae%b5">#</a>
 </h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">// 命名空间为变量、函数和其他声明提供了分离的的作用域。
-</span><span style="color:#75715e">// 命名空间可以嵌套使用。
-</span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">namespace</span> First {
-    <span style="color:#66d9ef">namespace</span> Nested {
-        <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">foo</span>()
-        {
-            printf(<span style="color:#e6db74">&#34;This is First::Nested::foo</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
-        }
-    } <span style="color:#75715e">// 结束嵌套的命名空间Nested
-</span><span style="color:#75715e"></span>} <span style="color:#75715e">// 结束命名空间First
-</span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">namespace</span> Second {
-    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">foo</span>()
-    {
-        printf(<span style="color:#e6db74">&#34;This is Second::foo</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
-    }
-}
-
-<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">foo</span>()
-{
-    printf(<span style="color:#e6db74">&#34;This is global foo</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
-}
-
-<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
-{
-    <span style="color:#75715e">// 如果没有特别指定，就从“Second”中取得所需的内容。
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> Second;
-
-    foo(); <span style="color:#75715e">// 显示“This is Second::foo”
-</span><span style="color:#75715e"></span>    First<span style="color:#f92672">::</span>Nested<span style="color:#f92672">::</span>foo(); <span style="color:#75715e">// 显示“This is First::Nested::foo”
-</span><span style="color:#75715e"></span>    <span style="color:#f92672">::</span>foo(); <span style="color:#75715e">// 显示“This is global foo”
-</span><span style="color:#75715e"></span>}
-</code></pre></div></article>
+</article>
  
       
 
@@ -496,12 +468,6 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-
-  <div><a class="flex align-center" href="https://github.com/ikingye/note/commit/793e69cd3128cff5ea1953d9b41681e1f3c6c56f" title='Last modified by yewang | 2020-03-16' target="_blank" rel="noopener">
-      <img src="/study-cpp/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-03-16</span>
-    </a>
-  </div>
 
 
 
@@ -534,7 +500,7 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#c-命名空间">C++ 命名空间</a></li>
+    <li><a href="#代码片段">代码片段</a></li>
   </ul>
 </nav>
 

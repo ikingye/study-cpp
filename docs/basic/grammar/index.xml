@@ -16,8 +16,18 @@
       
       <guid>https://ikingye.github.io/study-cpp/docs/basic/grammar/keyword/</guid>
       <description>C++ 关键字 #  这是 C++ 中的保留字列表。因为它们为语言所用，故这些关键词不可用于重定义或重载。
-注意 and、bitor、or、xor、compl、bitand、and_eq、or_eq、xor_eq、not 及 not_eq（还有双标符 &amp;lt;%、%&amp;gt;、&amp;lt;:、:&amp;gt;、%: 及 %:%:）提供标准记号的代用表示方法。
+注意 and、bitor、or、xor、compl、bitand、and_eq、or_eq、xor_eq、not 及 not_eq（还有双标符 &amp;lt;%、%&amp;gt;、&amp;lt;:、:&amp;gt;、%: 及 %:%:）提供标准记号的代用表示方法。
 参考：C++ 参考手册</description>
+    </item>
+    
+    <item>
+      <title>class</title>
+      <link>https://ikingye.github.io/study-cpp/docs/basic/grammar/class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-cpp/docs/basic/grammar/class/</guid>
+      <description>class #  建议：
+ class 表示被封装的用户自定义类型，不公开定义非静态数据成员，一般通过成员方法进行交互。 struct 表示数据的简单集合，公开定义数据成员，只定义用于初始化数据成员的方法 (比如：构造 / 析构函数，initialize(), reset(), validate())。  // 简单的数据聚合，没有动作 struct Coordinate { int x; int y; int z; }; // 有动作的对象 class Cat { public: void meow(); private: ... }; class vs struct #   默认继承权限  class: private struct: public   成员的默认访问权限  class: private struct: public    除了这两点，class 和 struct 基本就是一个东西。</description>
     </item>
     
     <item>
@@ -26,7 +36,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/study-cpp/docs/basic/grammar/vs-c/</guid>
-      <description>C++ 与 C 语言的差异 #   字符字面量的大小 // 在C++中，字符字面量的大小是一个字节。 sizeof(&amp;#39;c&amp;#39;) == 1 // 在C语言中，字符字面量的大小与int相同。 sizeof(&amp;#39;c&amp;#39;) == sizeof(10)  函数原型与函数定义匹配 // C++ 的函数原型与函数定义是严格匹配的 void func(); // 这个函数不能接受任何参数  // 而在C语言中 void func(); // 这个函数能接受任意数量的参数  NULL vs nullptr // 在 C++ 中，用 nullptr 代替 C 语言中的 NULL int* ip = nullptr;  同文件 // C++ 也可以使用 C 语言的标准头文件， // 但是需要加上前缀 “c” 并去掉末尾的 “.h”。 #include &amp;lt;cstdio&amp;gt;  </description>
+      <description>C++ 与 C 语言的差异 #    字符字面量的大小
+// 在C++中，字符字面量的大小是一个字节。 sizeof(&amp;#39;c&amp;#39;) == 1 // 在C语言中，字符字面量的大小与int相同。 sizeof(&amp;#39;c&amp;#39;) == sizeof(10)   函数原型与函数定义匹配
+// C++ 的函数原型与函数定义是严格匹配的 void func(); // 这个函数不能接受任何参数  // 而在C语言中 void func(); // 这个函数能接受任意数量的参数   NULL vs nullptr
+// 在 C++ 中，用 nullptr 代替 C 语言中的 NULL int* ip = nullptr;   同文件
+// C++ 也可以使用 C 语言的标准头文件， // 但是需要加上前缀 “c” 并去掉末尾的 “.h”。 #include &amp;lt;cstdio&amp;gt;  </description>
     </item>
     
     <item>

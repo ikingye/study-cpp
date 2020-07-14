@@ -33,17 +33,12 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/study-cpp/docs/principle/</loc>
+    <loc>https://ikingye.github.io/study-cpp/docs/design/</loc>
     <lastmod>2020-03-15T18:55:33+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/study-cpp/docs/appendix/interview/advanced/</loc>
-    <lastmod>2020-03-07T23:47:28+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/study-cpp/docs/appendix/interview/</loc>
     <lastmod>2020-03-07T23:47:28+08:00</lastmod>
   </url>
   
@@ -68,6 +63,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/study-cpp/docs/basic/grammar/class/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/study-cpp/docs/basic/grammar/vs-c/</loc>
     <lastmod>2020-03-15T18:55:33+08:00</lastmod>
   </url>
@@ -78,13 +77,17 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/study-cpp/docs/basic/practice/</loc>
+    <lastmod>2020-03-16T20:09:31+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/study-cpp/docs/basic/grammar/pointer/</loc>
     <lastmod>2020-03-16T22:36:21+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/study-cpp/docs/basic/practice/</loc>
-    <lastmod>2020-03-16T20:09:31+08:00</lastmod>
+    <loc>https://ikingye.github.io/study-cpp/docs/design/standard/</loc>
   </url>
   
   <url>
@@ -100,6 +103,19 @@
   <url>
     <loc>https://ikingye.github.io/study-cpp/docs/basic/grammar/reference/</loc>
     <lastmod>2020-03-16T20:09:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/study-cpp/docs/appendix/interview/</loc>
+    <lastmod>2020-03-07T23:47:28+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/study-cpp/docs/basic/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/study-cpp/docs/appendix/attention/</loc>
   </url>
   
   <url>

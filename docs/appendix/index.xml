@@ -15,7 +15,19 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/study-cpp/docs/appendix/tutorial/</guid>
-      <description>教程 #  基础 #   learn c++ in y minutes  进阶 #  高阶 #  </description>
+      <description>教程 #  基础 #   learn c++ in y minutes   C++ 后台开发有哪些练基础的开源项目？  yedf/handy     进阶 #  高阶 #  </description>
+    </item>
+    
+    <item>
+      <title>关注</title>
+      <link>https://ikingye.github.io/study-cpp/docs/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-cpp/docs/appendix/attention/</guid>
+      <description>关注 #  google/glog #  C++ implementation of the Google logging module
+gRPC #  gRPC is a modern, open source, high-performance remote procedure call (RPC) framework that can run anywhere. gRPC enables client and server applications to communicate transparently, and simplifies the building of connected systems.
+grpc.io
+ web #  ipkn/crow #  Crow is very fast and easy to use C++ micro web framework (inspired by Python Flask)</description>
     </item>
     
   </channel>

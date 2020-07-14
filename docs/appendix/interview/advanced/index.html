@@ -4,9 +4,15 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="进阶面试题 #  ">
+<meta name="description" content="进阶面试题 #  为什么 C&#43;&#43; 的 member function template 不能是 virtual 的 #  比如，下面的代码是不合法的：
+class Animal{ public: template&lt;typename T&gt; virtual void make_sound(){ //...  } }; 因为 C&#43;&#43; 的编译与链接模型是 &ldquo;分离&rdquo; 的 (至少是部分原因吧)。
+从 Unix/C 开始，一个 C/C&#43;&#43; 程序就可以被分开编译，然后用一个 linker 链接起来。这种模型有一个问题，就是各个编译单元可能对另一个编译单元一无所知。 一个 function template 最后到底会被 instantiate 为多少个函数，要等整个程序 (所有的编译单元) 全部被编译完成才知道。 同时，virtual function 的实现大多利用了一个 &ldquo;虚函数表&rdquo; 的东西，这种实现中，一个类的内存布局 (或者说虚函数表的内存布局) 需要在这个类编译完成的时候就被完全确定。 所以，由上面的矛盾可知，C&#43;&#43; 的 member function 不能既是 template 又是 virtual 的。
+参考：https://www.zhihu.com/question/60911582/answer/182045051">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="进阶" />
-<meta property="og:description" content="进阶面试题 #  " />
+<meta property="og:description" content="进阶面试题 #  为什么 C&#43;&#43; 的 member function template 不能是 virtual 的 #  比如，下面的代码是不合法的：
+class Animal{ public: template&lt;typename T&gt; virtual void make_sound(){ //...  } }; 因为 C&#43;&#43; 的编译与链接模型是 &ldquo;分离&rdquo; 的 (至少是部分原因吧)。
+从 Unix/C 开始，一个 C/C&#43;&#43; 程序就可以被分开编译，然后用一个 linker 链接起来。这种模型有一个问题，就是各个编译单元可能对另一个编译单元一无所知。 一个 function template 最后到底会被 instantiate 为多少个函数，要等整个程序 (所有的编译单元) 全部被编译完成才知道。 同时，virtual function 的实现大多利用了一个 &ldquo;虚函数表&rdquo; 的东西，这种实现中，一个类的内存布局 (或者说虚函数表的内存布局) 需要在这个类编译完成的时候就被完全确定。 所以，由上面的矛盾可知，C&#43;&#43; 的 member function 不能既是 template 又是 virtual 的。
+参考：https://www.zhihu.com/question/60911582/answer/182045051" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/study-cpp/docs/appendix/interview/advanced/" />
 <meta property="article:modified_time" content="2020-03-07T23:47:28+08:00" />
@@ -14,7 +20,7 @@
 <link rel="manifest" href="/study-cpp/manifest.json">
 <link rel="icon" href="/study-cpp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/study-cpp/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
-<script defer src="/study-cpp/en.search.min.131dc743bb9ad7a3dbfdafde57a9fe1161e4a7172ca003a9445a2b4b207c3335.js" integrity="sha256-Ex3HQ7ua16Pb/a/eV6n&#43;EWHkpxcsoAOpRForSyB8MzU="></script>
+<script defer src="/study-cpp/en.search.min.fc4023cc7d6c9555111a54595b470343af87ae559d2a43979d4d690f030e1b3c.js" integrity="sha256-/EAjzH1slVURGlRZW0cDQ6&#43;HrlWdKkOXnU1pDwMOGzw="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -80,7 +86,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <span>第一部分 基础入门</span>
+    <a href="/study-cpp/docs/basic/" class="">第一部分 基础入门</a>
   
 
           
@@ -111,6 +117,16 @@ https://github.com/alex-shpak/hugo-book
           
   
     <a href="/study-cpp/docs/basic/grammar/keyword/" class="">关键字</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/study-cpp/docs/basic/grammar/class/" class="">class</a>
   
 
         </li>
@@ -176,7 +192,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/basic/practice/" class="">最佳实践</a>
+    <a href="/study-cpp/docs/basic/practice/" class="">实践</a>
   
 
           
@@ -231,6 +247,23 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+    <a href="/study-cpp/docs/basic/snippet/" class="collapsed ">代码片段</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
   </ul>
   
 
@@ -241,7 +274,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <span>第二部分 原理</span>
+    <span>第二部分 设计</span>
   
 
           
@@ -251,6 +284,23 @@ https://github.com/alex-shpak/hugo-book
 
   
   <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/study-cpp/docs/design/standard/" class="collapsed ">标准</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
     
   </ul>
   
@@ -308,7 +358,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/appendix/interview/" class="">面试题</a>
+    <a href="/study-cpp/docs/appendix/interview/" class="collapsed ">面试题</a>
   
 
           
@@ -350,6 +400,16 @@ https://github.com/alex-shpak/hugo-book
       
     
   </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/study-cpp/docs/appendix/attention/" class="">关注</a>
   
 
         </li>
@@ -418,7 +478,11 @@ https://github.com/alex-shpak/hugo-book
     
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#进阶面试题">进阶面试题</a></li>
+    <li><a href="#进阶面试题">进阶面试题</a>
+      <ul>
+        <li><a href="#为什么-c-的-member-function-template-不能是-virtual-的">为什么 C++ 的 member function template 不能是 virtual 的</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -434,6 +498,24 @@ https://github.com/alex-shpak/hugo-book
   进阶面试题
   <a class="anchor" href="#%e8%bf%9b%e9%98%b6%e9%9d%a2%e8%af%95%e9%a2%98">#</a>
 </h1>
+<h2 id="为什么-c-的-member-function-template-不能是-virtual-的">
+  为什么 C++ 的 member function template 不能是 virtual 的
+  <a class="anchor" href="#%e4%b8%ba%e4%bb%80%e4%b9%88-c-%e7%9a%84-member-function-template-%e4%b8%8d%e8%83%bd%e6%98%af-virtual-%e7%9a%84">#</a>
+</h2>
+<p>比如，下面的代码是不合法的：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Animal</span>{
+  <span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+      <span style="color:#66d9ef">template</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">typename</span> T<span style="color:#f92672">&gt;</span>
+      <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> make_sound(){
+        <span style="color:#75715e">//...
+</span><span style="color:#75715e"></span>      }
+};
+</code></pre></div><p>因为 C++ 的编译与链接模型是 &ldquo;分离&rdquo; 的 (至少是部分原因吧)。</p>
+<p>从 Unix/C 开始，一个 C/C++ 程序就可以被分开编译，然后用一个 linker 链接起来。这种模型有一个问题，就是各个编译单元可能对另一个编译单元一无所知。
+一个 function template 最后到底会被 instantiate 为多少个函数，要等整个程序 (所有的编译单元) 全部被编译完成才知道。
+同时，virtual function 的实现大多利用了一个 &ldquo;虚函数表&rdquo; 的东西，这种实现中，一个类的内存布局 (或者说虚函数表的内存布局) 需要在这个类编译完成的时候就被完全确定。
+所以，由上面的矛盾可知，C++ 的 member function 不能既是 template 又是 virtual 的。</p>
+<p>参考：https://www.zhihu.com/question/60911582/answer/182045051</p>
 </article>
  
       
@@ -481,7 +563,11 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#进阶面试题">进阶面试题</a></li>
+    <li><a href="#进阶面试题">进阶面试题</a>
+      <ul>
+        <li><a href="#为什么-c-的-member-function-template-不能是-virtual-的">为什么 C++ 的 member function template 不能是 virtual 的</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
