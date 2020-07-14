@@ -1,6 +1,6 @@
 {
-  "name": "C++ 笔记",
-  "short_name": "C++ 笔记",
+  "name": "C++ 学习笔记",
+  "short_name": "C++ 学习笔记",
   "start_url": "/study-cpp/",
   "scope": "/study-cpp/",
   "display": "standalone",
