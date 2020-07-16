@@ -4,18 +4,21 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="面试题 #  基础题 #  进阶题 #  高阶题 #  综合 #   你遇到过哪些高质量的 C&#43;&#43; 面试？ What is the best C&#43;&#43; interview question? [closed]  ">
+<meta name="description" content="面试题 #   你遇到过哪些高质量的 C&#43;&#43; 面试？ What is the best C&#43;&#43; interview question? [closed]  基础题 #  进阶题 #  为什么 C&#43;&#43; 的 member function template 不能是 virtual 的 #  比如，下面的代码是不合法的：
+class Animal{ public: template&lt;typename T&gt; virtual void make_sound(){ //...  } }; 因为 C&#43;&#43; 的编译与链接模型是 &ldquo;分离&rdquo; 的 (至少是部分原因吧)。
+从 Unix/C 开始，一个 C/C&#43;&#43; 程序就可以被分开编译，然后用一个 linker 链接起来。这种模型有一个问题，就是各个编译单元可能对另一个编译单元一无所知。 一个 function template 最后到底会被 instantiate 为多少个函数，要等整个程序 (所有的编译单元) 全部被编译完成才知道。 同时，virtual function 的实现大多利用了一个 &ldquo;虚函数表&rdquo; 的东西，这种实现中，一个类的内存布局 (或者说虚函数表的内存布局) 需要在这个类编译完成的时候就被完全确定。 所以，由上面的矛盾可知，C&#43;&#43; 的 member function 不能既是 template 又是 virtual 的。">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="4.2 面试题" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
+<meta property="og:description" content="面试题 #   你遇到过哪些高质量的 C&#43;&#43; 面试？ What is the best C&#43;&#43; interview question? [closed]  基础题 #  进阶题 #  为什么 C&#43;&#43; 的 member function template 不能是 virtual 的 #  比如，下面的代码是不合法的：
+class Animal{ public: template&lt;typename T&gt; virtual void make_sound(){ //...  } }; 因为 C&#43;&#43; 的编译与链接模型是 &ldquo;分离&rdquo; 的 (至少是部分原因吧)。
+从 Unix/C 开始，一个 C/C&#43;&#43; 程序就可以被分开编译，然后用一个 linker 链接起来。这种模型有一个问题，就是各个编译单元可能对另一个编译单元一无所知。 一个 function template 最后到底会被 instantiate 为多少个函数，要等整个程序 (所有的编译单元) 全部被编译完成才知道。 同时，virtual function 的实现大多利用了一个 &ldquo;虚函数表&rdquo; 的东西，这种实现中，一个类的内存布局 (或者说虚函数表的内存布局) 需要在这个类编译完成的时候就被完全确定。 所以，由上面的矛盾可知，C&#43;&#43; 的 member function 不能既是 template 又是 virtual 的。" />
+<meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/study-cpp/docs/appendix/interview/" />
 
 <title>4.2 面试题 | C&#43;&#43; 学习笔记</title>
 <link rel="manifest" href="/study-cpp/manifest.json">
 <link rel="icon" href="/study-cpp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/study-cpp/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
-<script defer src="/study-cpp/en.search.min.c91cebef976b59f187a4544af35a333e5680f1b5494a5552dd89ccf9da9160e4.js" integrity="sha256-yRzr75drWfGHpFRK81ozPlaA8bVJSlVS3YnM&#43;dqRYOQ="></script>
-<link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/study-cpp/docs/appendix/interview/index.xml" title="C++ 学习笔记" />
+<script defer src="/study-cpp/en.search.min.36d857cc0b28b6755cc1fbdf41d39a1d5e504d63b113439db8c42e473fce0d16.js" integrity="sha256-NthXzAsotnVcwfvfQdOaHV5QTWOxE0OduMQuRz/ODRY="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -407,48 +410,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/appendix/interview/" class="collapsed active">4.2 面试题</a>
-  
-
-          
-  
-  
-  
-
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-    <a href="/study-cpp/docs/appendix/interview/basic/" class="">基础</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/study-cpp/docs/appendix/interview/advanced/" class="">进阶</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/study-cpp/docs/appendix/interview/expert/" class="">高阶</a>
-  
-
-        </li>
-      
-    
-  </ul>
+    <a href="/study-cpp/docs/appendix/interview/" class="active">4.2 面试题</a>
   
 
         </li>
@@ -530,9 +492,11 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#面试题">面试题</a>
       <ul>
         <li><a href="#基础题">基础题</a></li>
-        <li><a href="#进阶题">进阶题</a></li>
-        <li><a href="#高阶题">高阶题</a></li>
-        <li><a href="#综合">综合</a></li>
+        <li><a href="#进阶题">进阶题</a>
+          <ul>
+            <li><a href="#为什么-c-的-member-function-template-不能是-virtual-的">为什么 C++ 的 member function template 不能是 virtual 的</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -550,6 +514,10 @@ https://github.com/alex-shpak/hugo-book
   面试题
   <a class="anchor" href="#%e9%9d%a2%e8%af%95%e9%a2%98">#</a>
 </h1>
+<ul>
+<li><a href="https://www.zhihu.com/question/60911582">你遇到过哪些高质量的 C++ 面试？</a></li>
+<li><a href="https://softwareengineering.stackexchange.com/questions/25836/what-is-the-best-c-interview-question">What is the best C++ interview question? [closed]</a></li>
+</ul>
 <h2 id="基础题">
   基础题
   <a class="anchor" href="#%e5%9f%ba%e7%a1%80%e9%a2%98">#</a>
@@ -558,18 +526,24 @@ https://github.com/alex-shpak/hugo-book
   进阶题
   <a class="anchor" href="#%e8%bf%9b%e9%98%b6%e9%a2%98">#</a>
 </h2>
-<h2 id="高阶题">
-  高阶题
-  <a class="anchor" href="#%e9%ab%98%e9%98%b6%e9%a2%98">#</a>
-</h2>
-<h2 id="综合">
-  综合
-  <a class="anchor" href="#%e7%bb%bc%e5%90%88">#</a>
-</h2>
-<ul>
-<li><a href="https://www.zhihu.com/question/60911582">你遇到过哪些高质量的 C++ 面试？</a></li>
-<li><a href="https://softwareengineering.stackexchange.com/questions/25836/what-is-the-best-c-interview-question">What is the best C++ interview question? [closed]</a></li>
-</ul>
+<h3 id="为什么-c-的-member-function-template-不能是-virtual-的">
+  为什么 C++ 的 member function template 不能是 virtual 的
+  <a class="anchor" href="#%e4%b8%ba%e4%bb%80%e4%b9%88-c-%e7%9a%84-member-function-template-%e4%b8%8d%e8%83%bd%e6%98%af-virtual-%e7%9a%84">#</a>
+</h3>
+<p>比如，下面的代码是不合法的：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Animal</span>{
+  <span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+      <span style="color:#66d9ef">template</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">typename</span> T<span style="color:#f92672">&gt;</span>
+      <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> make_sound(){
+        <span style="color:#75715e">//...
+</span><span style="color:#75715e"></span>      }
+};
+</code></pre></div><p>因为 C++ 的编译与链接模型是 &ldquo;分离&rdquo; 的 (至少是部分原因吧)。</p>
+<p>从 Unix/C 开始，一个 C/C++ 程序就可以被分开编译，然后用一个 linker 链接起来。这种模型有一个问题，就是各个编译单元可能对另一个编译单元一无所知。
+一个 function template 最后到底会被 instantiate 为多少个函数，要等整个程序 (所有的编译单元) 全部被编译完成才知道。
+同时，virtual function 的实现大多利用了一个 &ldquo;虚函数表&rdquo; 的东西，这种实现中，一个类的内存布局 (或者说虚函数表的内存布局) 需要在这个类编译完成的时候就被完全确定。
+所以，由上面的矛盾可知，C++ 的 member function 不能既是 template 又是 virtual 的。</p>
+<p>参考：https://www.zhihu.com/question/60911582/answer/182045051</p>
 </article>
  
       
@@ -579,12 +553,6 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-
-  <div><a class="flex align-center" href="https://github.com/ikingye/note/commit/0a0d8e9f627a531b5873ddb513a2d4f2ee25df74" title='Last modified by yewang | 2020-07-14' target="_blank" rel="noopener">
-      <img src="/study-cpp/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-07-14</span>
-    </a>
-  </div>
 
 
 
@@ -620,9 +588,11 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#面试题">面试题</a>
       <ul>
         <li><a href="#基础题">基础题</a></li>
-        <li><a href="#进阶题">进阶题</a></li>
-        <li><a href="#高阶题">高阶题</a></li>
-        <li><a href="#综合">综合</a></li>
+        <li><a href="#进阶题">进阶题</a>
+          <ul>
+            <li><a href="#为什么-c-的-member-function-template-不能是-virtual-的">为什么 C++ 的 member function template 不能是 virtual 的</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
