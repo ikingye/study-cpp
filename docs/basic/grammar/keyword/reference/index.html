@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" dir=>
+<html lang="en" dir="ltr">
 
 <head>
+  <meta name="generator" content="Hugo 0.87.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="C&#43;&#43; 引用 #    引用是一种特殊的指针类型，一旦被定义就不能重新赋值，并且不能被设置为空值。
@@ -14,13 +15,15 @@ const string&amp; barRef = bar; // 建立指向bar的常量引用。 // 和C语�
  对引用类型进行解引用时，不需要使用 * 赋值时也不需要用 &amp; 来取地址  using namespace std; string foo = &#34;I am foo&#34;; string bar = &#34;I am bar&#34;; string&amp; fooRef = foo; // 建立了一个对foo的引用。 fooRef &#43;= &#34;. Hi!&#34;; // 通过引用来修改foo的值 cout &lt;&lt; fooRef; // &#34;I am foo. Hi!&#34; // 这句话的并不会改变fooRef的指向，其效果与“foo = bar”相同。 // 也就是说，在执行这条语句之后，foo == &#34;I am bar&#34;。 fooRef = bar;   不能修改一个常量引用的值
 const string&amp; barRef = bar; // 建立指向bar的常量引用。 // 和C语言中一样，（指针和引用）声明为常量时，对应的值不能被修改。 barRef &#43;= &#34;." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ikingye.github.io/study-cpp/docs/basic/grammar/keyword/reference/" />
+<meta property="og:url" content="https://ikingye.github.io/study-cpp/docs/basic/grammar/keyword/reference/" /><meta property="article:section" content="docs" />
+
 <meta property="article:modified_time" content="2020-07-14T23:43:17+08:00" />
+
 <title>引用 | C&#43;&#43; 学习笔记</title>
 <link rel="manifest" href="/study-cpp/manifest.json">
 <link rel="icon" href="/study-cpp/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/study-cpp/book.min.4f8da4ae7bd74b4696bf39a4072828c77ef98ec38d50215e29570bb86301684b.css" integrity="sha256-T42krnvXS0aWvzmkBygox375jsONUCFeKVcLuGMBaEs=">
-<script defer src="/study-cpp/en.search.min.b111f227874120ae5d082800b4f187923a9e669811b2408f0d8af0628926b155.js" integrity="sha256-sRHyJ4dBIK5dCCgAtPGHkjqeZpgRskCPDYrwYokmsVU="></script>
+<link rel="stylesheet" href="/study-cpp/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
+<script defer src="/study-cpp/en.search.min.fd71282e7bb7d6c524b0f990f617cd6dba08faac7c7a61253d1c2c4cb13a57f2.js" integrity="sha256-/XEoLnu31sUksPmQ9hfNbboI&#43;qx8emElPRwsTLE6V/I="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -29,12 +32,13 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body dir=>
+<body dir="ltr">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
     <aside class="book-menu">
-      
+      <div class="book-menu-content">
+        
   <nav>
 <h2 class="book-brand">
   <a href="/study-cpp"><span>C&#43;&#43; 学习笔记</span>
@@ -71,56 +75,54 @@ https://github.com/alex-shpak/hugo-book
 
 
   
-  
-  
-  
-
-  
   <ul>
     
       
         <li>
           
   
-    <a href="/study-cpp/docs/basic/" class="">第一部分 基础入门</a>
+  
+
+  
+    <a href="https://ikingye.github.io/study-cpp/docs/basic/" class="">第一部分 基础入门</a>
   
 
           
-  
-  
-  
-
-  
   <ul>
     
       
         <li>
           
   
-    <a href="/study-cpp/docs/basic/grammar/" class="collapsed ">1.1 语法</a>
+  
+
+  
+    <input type="checkbox" id="section-2c5c10cf8522b30c8f8cdddd190c3d5b" class="toggle" checked />
+    <label for="section-2c5c10cf8522b30c8f8cdddd190c3d5b" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/basic/grammar/" class="">1.1 语法</a>
+    </label>
   
 
           
-  
-  
-  
-
-  
   <ul>
     
       
         <li>
           
   
-    <a href="/study-cpp/docs/basic/grammar/type/" class="collapsed ">1.1.1 数据类型</a>
+  
+
+  
+    <input type="checkbox" id="section-f2e27b1ad26145beba6647576f14786c" class="toggle"  />
+    <label for="section-f2e27b1ad26145beba6647576f14786c" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/basic/grammar/type/" class="">1.1.1 数据类型</a>
+    </label>
   
 
           
-  
-  
-  
-
-  
+  <ul>
+    
+  </ul>
 
         </li>
       
@@ -129,22 +131,26 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/basic/grammar/keyword/" class="collapsed ">1.1.2 关键字</a>
+  
+
+  
+    <input type="checkbox" id="section-a2a799bc63ec4825784200ba14f88ca9" class="toggle" checked />
+    <label for="section-a2a799bc63ec4825784200ba14f88ca9" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/basic/grammar/keyword/" class="">1.1.2 关键字</a>
+    </label>
   
 
           
-  
-  
-  
-
-  
   <ul>
     
       
         <li>
           
   
-    <a href="/study-cpp/docs/basic/grammar/keyword/class/" class="">class</a>
+  
+
+  
+    <a href="https://ikingye.github.io/study-cpp/docs/basic/grammar/keyword/class/" class="">class</a>
   
 
         </li>
@@ -154,7 +160,10 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/basic/grammar/keyword/vs-c/" class="">与 C 的差异</a>
+  
+
+  
+    <a href="https://ikingye.github.io/study-cpp/docs/basic/grammar/keyword/vs-c/" class="">与 C 的差异</a>
   
 
         </li>
@@ -164,7 +173,10 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/basic/grammar/keyword/function/" class="">函数</a>
+  
+
+  
+    <a href="https://ikingye.github.io/study-cpp/docs/basic/grammar/keyword/function/" class="">函数</a>
   
 
         </li>
@@ -174,7 +186,10 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/basic/grammar/keyword/pointer/" class="">指针</a>
+  
+
+  
+    <a href="https://ikingye.github.io/study-cpp/docs/basic/grammar/keyword/pointer/" class="">指针</a>
   
 
         </li>
@@ -184,7 +199,10 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/basic/grammar/keyword/namespace/" class="">命名空间</a>
+  
+
+  
+    <a href="https://ikingye.github.io/study-cpp/docs/basic/grammar/keyword/namespace/" class="">命名空间</a>
   
 
         </li>
@@ -194,20 +212,76 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/basic/grammar/keyword/reference/" class="active">引用</a>
+  
+
+  
+    <a href="https://ikingye.github.io/study-cpp/docs/basic/grammar/keyword/reference/" class=" active">引用</a>
   
 
         </li>
       
     
   </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6b15250934f01eea443005575ff8ee35" class="toggle"  />
+    <label for="section-6b15250934f01eea443005575ff8ee35" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/basic/std/" class="">1.2 标准库</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ea095051f8c6af1e76ea021673f5a018" class="toggle"  />
+    <label for="section-ea095051f8c6af1e76ea021673f5a018" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/basic/spec/" class="">1.3 编程规范</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://ikingye.github.io/study-cpp/docs/basic/spec/baidu/" class="">百度</a>
   
 
         </li>
       
     
   </ul>
-  
 
         </li>
       
@@ -216,15 +290,32 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/basic/std/" class="collapsed ">1.2 标准库</a>
+  
+
+  
+    <input type="checkbox" id="section-88f1811bb6a396226176f604fec52cf2" class="toggle"  />
+    <label for="section-88f1811bb6a396226176f604fec52cf2" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/basic/others/" class="">1.4 其他</a>
+    </label>
   
 
           
-  
+  <ul>
+    
+      
+        <li>
+          
   
   
 
   
+    <a href="https://ikingye.github.io/study-cpp/docs/basic/others/practice/" class="">实践</a>
+  
+
+          
+  <ul>
+    
+  </ul>
 
         </li>
       
@@ -233,15 +324,19 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/basic/spec/" class="collapsed ">1.3 编程规范</a>
+  
+
+  
+    <input type="checkbox" id="section-b9184bde73a977d9f2043affd75ed3c2" class="toggle"  />
+    <label for="section-b9184bde73a977d9f2043affd75ed3c2" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/basic/others/standard/" class="">标准</a>
+    </label>
   
 
           
-  
-  
-  
-
-  
+  <ul>
+    
+  </ul>
 
         </li>
       
@@ -250,21 +345,26 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/basic/others/" class="collapsed ">1.4 其他</a>
+  
+
+  
+    <a href="https://ikingye.github.io/study-cpp/docs/basic/others/version/" class="">版本</a>
   
 
           
-  
-  
-  
-
-  
+  <ul>
+    
+  </ul>
 
         </li>
       
     
   </ul>
-  
+
+        </li>
+      
+    
+  </ul>
 
         </li>
       
@@ -272,31 +372,33 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
           
+  
+  
+
   
     <span>第二部分 进阶实战</span>
   
 
           
-  
-  
-  
-
-  
   <ul>
     
       
         <li>
           
   
-    <a href="/study-cpp/docs/advanced/pattern/" class="collapsed ">2.1 设计模式</a>
+  
+
+  
+    <input type="checkbox" id="section-3695224c3b2b3ff4822b00b536e6168b" class="toggle"  />
+    <label for="section-3695224c3b2b3ff4822b00b536e6168b" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/advanced/pattern/" class="">2.1 设计模式</a>
+    </label>
   
 
           
-  
-  
-  
-
-  
+  <ul>
+    
+  </ul>
 
         </li>
       
@@ -305,15 +407,19 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/advanced/algs/" class="collapsed ">2.2 算法实现</a>
+  
+
+  
+    <input type="checkbox" id="section-afac21ff0b0b9877d980857f29b9767a" class="toggle"  />
+    <label for="section-afac21ff0b0b9877d980857f29b9767a" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/advanced/algs/" class="">2.2 算法实现</a>
+    </label>
   
 
           
-  
-  
-  
-
-  
+  <ul>
+    
+  </ul>
 
         </li>
       
@@ -322,15 +428,19 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/advanced/pkg/" class="collapsed ">2.3 常用库</a>
+  
+
+  
+    <input type="checkbox" id="section-b656c687691a7584675f479cafc084bf" class="toggle"  />
+    <label for="section-b656c687691a7584675f479cafc084bf" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/advanced/pkg/" class="">2.3 常用库</a>
+    </label>
   
 
           
-  
-  
-  
-
-  
+  <ul>
+    
+  </ul>
 
         </li>
       
@@ -339,15 +449,19 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/advanced/snippet/" class="collapsed ">2.4 代码片段</a>
+  
+
+  
+    <input type="checkbox" id="section-1a56e51bd16a3008ab3330849a82ab65" class="toggle"  />
+    <label for="section-1a56e51bd16a3008ab3330849a82ab65" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/advanced/snippet/" class="">2.4 代码片段</a>
+    </label>
   
 
           
-  
-  
-  
-
-  
+  <ul>
+    
+  </ul>
 
         </li>
       
@@ -356,15 +470,19 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/advanced/test/" class="collapsed ">2.5 测试</a>
+  
+
+  
+    <input type="checkbox" id="section-7ddfc8bac02c5156348ef18159a2d157" class="toggle"  />
+    <label for="section-7ddfc8bac02c5156348ef18159a2d157" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/advanced/test/" class="">2.5 测试</a>
+    </label>
   
 
           
-  
-  
-  
-
-  
+  <ul>
+    
+  </ul>
 
         </li>
       
@@ -373,15 +491,19 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/advanced/prof/" class="collapsed ">2.6 性能</a>
+  
+
+  
+    <input type="checkbox" id="section-44663a755dbc8f64101cf03e4f3aad6a" class="toggle"  />
+    <label for="section-44663a755dbc8f64101cf03e4f3aad6a" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/advanced/prof/" class="">2.6 性能</a>
+    </label>
   
 
           
-  
-  
-  
-
-  
+  <ul>
+    
+  </ul>
 
         </li>
       
@@ -390,21 +512,24 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/advanced/frame/" class="collapsed ">2.7 框架</a>
+  
+
+  
+    <input type="checkbox" id="section-e317404e8797aec2dfe5780bb677c7e6" class="toggle"  />
+    <label for="section-e317404e8797aec2dfe5780bb677c7e6" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/advanced/frame/" class="">2.7 框架</a>
+    </label>
   
 
           
-  
-  
-  
-
-  
+  <ul>
+    
+  </ul>
 
         </li>
       
     
   </ul>
-  
 
         </li>
       
@@ -412,31 +537,33 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
           
+  
+  
+
   
     <span>第三部分 设计与实现</span>
   
 
           
-  
-  
-  
-
-  
   <ul>
     
       
         <li>
           
   
-    <a href="/study-cpp/docs/code/type/" class="collapsed ">3.1 数据类型</a>
+  
+
+  
+    <input type="checkbox" id="section-49b663b02f020594ed0261630ee92402" class="toggle"  />
+    <label for="section-49b663b02f020594ed0261630ee92402" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/code/type/" class="">3.1 数据类型</a>
+    </label>
   
 
           
-  
-  
-  
-
-  
+  <ul>
+    
+  </ul>
 
         </li>
       
@@ -445,15 +572,19 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/code/keyword/" class="collapsed ">3.2 关键字</a>
+  
+
+  
+    <input type="checkbox" id="section-31b13e72ffe3de8e40f0fe1309389c56" class="toggle"  />
+    <label for="section-31b13e72ffe3de8e40f0fe1309389c56" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/code/keyword/" class="">3.2 关键字</a>
+    </label>
   
 
           
-  
-  
-  
-
-  
+  <ul>
+    
+  </ul>
 
         </li>
       
@@ -462,21 +593,24 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/code/runtime/" class="collapsed ">3.3 运行时</a>
+  
+
+  
+    <input type="checkbox" id="section-82a93258ddcc1fe5f28971ec4ce5f9bf" class="toggle"  />
+    <label for="section-82a93258ddcc1fe5f28971ec4ce5f9bf" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/code/runtime/" class="">3.3 运行时</a>
+    </label>
   
 
           
-  
-  
-  
-
-  
+  <ul>
+    
+  </ul>
 
         </li>
       
     
   </ul>
-  
 
         </li>
       
@@ -484,23 +618,27 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
           
+  
+  
+
   
     <span>第四部分 附录</span>
   
 
           
-  
-  
-  
-
-  
   <ul>
     
       
         <li>
           
   
-    <a href="/study-cpp/docs/appendix/tutorial/" class="">4.1 教程</a>
+  
+
+  
+    <input type="checkbox" id="section-2d181cd3861ca7652e852d22b5c3ff21" class="toggle"  />
+    <label for="section-2d181cd3861ca7652e852d22b5c3ff21" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/appendix/tutorial/" class="">4.1 教程</a>
+    </label>
   
 
         </li>
@@ -510,7 +648,13 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/appendix/interview/" class="">4.2 面试题</a>
+  
+
+  
+    <input type="checkbox" id="section-1141a4bba37d01f14e63bf36d9c7071d" class="toggle"  />
+    <label for="section-1141a4bba37d01f14e63bf36d9c7071d" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/appendix/interview/" class="">4.2 面试题</a>
+    </label>
   
 
         </li>
@@ -520,20 +664,24 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/study-cpp/docs/appendix/attention/" class="">4.3 关注项目</a>
+  
+
+  
+    <input type="checkbox" id="section-c743998336860c656367010fc7573b86" class="toggle"  />
+    <label for="section-c743998336860c656367010fc7573b86" class="flex justify-between">
+      <a href="https://ikingye.github.io/study-cpp/docs/appendix/attention/" class="">4.3 关注项目</a>
+    </label>
   
 
         </li>
       
     
   </ul>
-  
 
         </li>
       
     
   </ul>
-  
 
 
 
@@ -562,10 +710,11 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
+      </div>
     </aside>
 
     <div class="book-page">
@@ -589,7 +738,9 @@ https://github.com/alex-shpak/hugo-book
   
   <aside class="hidden clearfix">
     
-  <nav id="TableOfContents"></nav>
+  
+<nav id="TableOfContents"></nav>
+
 
 
   </aside>
@@ -599,7 +750,7 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="c-引用">
+  <article id="article" class="markdown"><h1 id="c-引用">
   C++ 引用
   <a class="anchor" href="#c-%e5%bc%95%e7%94%a8">#</a>
 </h1>
@@ -613,7 +764,7 @@ https://github.com/alex-shpak/hugo-book
 <li>对引用类型进行解引用时，不需要使用 <code>*</code></li>
 <li>赋值时也不需要用 <code>&amp;</code> 来取地址</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
 
 string foo <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;I am foo&#34;</span>;
 string bar <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;I am bar&#34;</span>;
@@ -627,7 +778,7 @@ string<span style="color:#f92672">&amp;</span> fooRef <span style="color:#f92672
 </code></pre></div></li>
 <li>
 <p>不能修改一个常量引用的值</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">const</span> string<span style="color:#f92672">&amp;</span> barRef <span style="color:#f92672">=</span> bar; <span style="color:#75715e">// 建立指向bar的常量引用。
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">const</span> string<span style="color:#f92672">&amp;</span> barRef <span style="color:#f92672">=</span> bar; <span style="color:#75715e">// 建立指向bar的常量引用。
 </span><span style="color:#75715e">// 和C语言中一样，（指针和引用）声明为常量时，对应的值不能被修改。
 </span><span style="color:#75715e"></span>barRef <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;. Hi!&#34;</span>; <span style="color:#75715e">// 这是错误的，不能修改一个常量引用的值。
 </span></code></pre></div></li>
@@ -659,8 +810,11 @@ string<span style="color:#f92672">&amp;</span> fooRef <span style="color:#f92672
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <p><span id="busuanzi_container_page_pv">本文访问量 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> 次</span></p>
     <p><span id="busuanzi_container_site_pv">本站总访问量 <span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span> 次</span></p>
-    <p><span id="busuanzi_container_site_uv">本站总访客数 <span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span> 人次</span></p>
+    <p><span id="busuanzi_container_site_uv">本站总访客数 <span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span> 人</span></p>
 </div>
+
+
+
 
 
       </footer>
@@ -697,10 +851,14 @@ string<span style="color:#f92672">&amp;</span> fooRef <span style="color:#f92672
 
     
     <aside class="book-toc">
-      
-  <nav id="TableOfContents"></nav>
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+
 
  
+      </div>
     </aside>
     
   </main>
