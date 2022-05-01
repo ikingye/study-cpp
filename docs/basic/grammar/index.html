@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="C&#43;&#43; 语法 #  main 函数 #  int main(int argc, char** argv) { return Envoy::MainCommon::main(argc, argv); } include #  我们使用#include，一般是一下两个目的：
@@ -16,7 +16,7 @@
 <link rel="manifest" href="/study-cpp/manifest.json">
 <link rel="icon" href="/study-cpp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/study-cpp/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/study-cpp/en.search.min.0ce56a79d126ed38661bae2c9d7adcc08ee7d6c1d025e278143333dfece1d97c.js" integrity="sha256-DOVqedEm7ThmG64snXrcwI7n1sHQJeJ4FDMz3&#43;zh2Xw="></script>
+<script defer src="/study-cpp/en.search.min.6bba4d722569040f9d4d490a0a053a62241cf31dd21dbdbf8b82c27557650f8a.js" integrity="sha256-a7pNciVpBA&#43;dTUkKCgU6YiQc8x3SHb2/i4LCdVdlD4o="></script>
 <link rel="alternate" type="application/rss+xml" href="https://kingye.me/study-cpp/docs/basic/grammar/index.xml" title="C++ 学习笔记" />
 <!--
 Made with Book Theme
@@ -691,7 +691,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -754,8 +754,8 @@ https://github.com/alex-shpak/hugo-book
   main 函数
   <a class="anchor" href="#main-%e5%87%bd%e6%95%b0">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">int</span> argc, <span style="color:#66d9ef">char</span><span style="color:#f92672">**</span> argv) { <span style="color:#66d9ef">return</span> Envoy<span style="color:#f92672">::</span>MainCommon<span style="color:#f92672">::</span>main(argc, argv); }
-</code></pre></div><h2 id="include">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">int</span> argc, <span style="color:#66d9ef">char</span><span style="color:#f92672">**</span> argv) { <span style="color:#66d9ef">return</span> Envoy<span style="color:#f92672">::</span>MainCommon<span style="color:#f92672">::</span>main(argc, argv); }
+</span></span></code></pre></div><h2 id="include">
   include
   <a class="anchor" href="#include">#</a>
 </h2>
@@ -786,10 +786,10 @@ https://github.com/alex-shpak/hugo-book
   <code>ifndef</code> 与 <code>#pragma once</code>
   <a class="anchor" href="#ifndef-%e4%b8%8e-pragma-once">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#ifndef &lt;标识&gt;
-</span><span style="color:#75715e">#define &lt;标识&gt;
-</span><span style="color:#75715e">#endif
-</span></code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#ifndef &lt;标识&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define &lt;标识&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#endif
+</span></span></span></code></pre></div><hr>
 <h2 id="namespace">
   namespace
   <a class="anchor" href="#namespace">#</a>
@@ -804,31 +804,31 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#using-namespace">#</a>
 </h3>
 <p>这个指令会告诉编译器，后续的代码将使用指定的命名空间中的名称</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
-
-<span style="color:#75715e">// 第一个命名空间
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">namespace</span> first_space{
-   <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">func</span>(){
-      cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;Inside first_space&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
-   }
-}
-<span style="color:#75715e">// 第二个命名空间
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">namespace</span> second_space{
-   <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">func</span>(){
-      cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;Inside second_space&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
-   }
-}
-
-<span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> first_space;
-<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span> ()
-{
-   <span style="color:#75715e">// 调用第一个命名空间中的函数
-</span><span style="color:#75715e"></span>   func();
-
-   <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
-}
-</code></pre></div></article>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 第一个命名空间
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">namespace</span> first_space{
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">func</span>(){
+</span></span><span style="display:flex;"><span>      cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;Inside first_space&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 第二个命名空间
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">namespace</span> second_space{
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">func</span>(){
+</span></span><span style="display:flex;"><span>      cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;Inside second_space&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> first_space;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span> ()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// 调用第一个命名空间中的函数
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   func();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></article>
  
       
 

@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="C&#43;&#43; 指针 #  智能指针 #     指针类别 支持 备注     unique_ptr C&#43;&#43; 11 拥有独有对象所有权语义的智能指针   shared_ptr C&#43;&#43; 11 拥有共享对象所有权语义的智能指针   weak_ptr C&#43;&#43; 11 到 std::shared_ptr 所管理对象的弱引用   auto_ptr C&#43;&#43; 17 中移除 拥有严格对象所有权语义的智能指针    unique_ptr #  std::unique_ptr 是通过指针占有并管理另一对象，并在 unique_ptr 离开作用域时释放该对象的智能指针。在下列两者之一发生时用关联的删除器释放对象：
@@ -19,7 +19,7 @@
 <link rel="manifest" href="/study-cpp/manifest.json">
 <link rel="icon" href="/study-cpp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/study-cpp/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/study-cpp/en.search.min.0ce56a79d126ed38661bae2c9d7adcc08ee7d6c1d025e278143333dfece1d97c.js" integrity="sha256-DOVqedEm7ThmG64snXrcwI7n1sHQJeJ4FDMz3&#43;zh2Xw="></script>
+<script defer src="/study-cpp/en.search.min.6bba4d722569040f9d4d490a0a053a62241cf31dd21dbdbf8b82c27557650f8a.js" integrity="sha256-a7pNciVpBA&#43;dTUkKCgU6YiQc8x3SHb2/i4LCdVdlD4o="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -693,7 +693,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -800,14 +800,14 @@ https://github.com/alex-shpak/hugo-book
 <li>最后剩下的占有对象的 shared_ptr 被通过 operator= 或 reset () 赋值为另一指针。</li>
 </ul>
 <p>有两种方式创建 <code>shared_ptr</code> ：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>( )
-{
-    shared_ptr<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> sptr1( <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span> );
-    <span style="color:#75715e">// 使用 make_shared 宏可以加速创建的过程
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 因为 shared_ptr 主动分配内存并且保存引用计数 (reference count)
-</span><span style="color:#75715e"></span>    shared_ptr<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> sptr2 <span style="color:#f92672">=</span> make_shared<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>(<span style="color:#ae81ff">100</span>);
-}
-</code></pre></div><p>参考：<a href="https://blog.csdn.net/jcq521045349/article/details/88957222">C++ 智能指针 - 内存泄露的惨痛经历</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>( )
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    shared_ptr<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> sptr1( <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span> );
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 使用 make_shared 宏可以加速创建的过程
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// 因为 shared_ptr 主动分配内存并且保存引用计数 (reference count)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    shared_ptr<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> sptr2 <span style="color:#f92672">=</span> make_shared<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>(<span style="color:#ae81ff">100</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>参考：<a href="https://blog.csdn.net/jcq521045349/article/details/88957222">C++ 智能指针 - 内存泄露的惨痛经历</a></p>
 <hr>
 </article>
  
