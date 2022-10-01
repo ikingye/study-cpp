@@ -2,20 +2,20 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.98.0" />
+  <meta name="generator" content="Hugo 0.104.2" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="C&#43;&#43; 与 C 语言的差异 #    字符字面量的大小
-// 在C&#43;&#43;中，字符字面量的大小是一个字节。 sizeof(&#39;c&#39;) == 1  // 在C语言中，字符字面量的大小与int相同。 sizeof(&#39;c&#39;) == sizeof(10)   函数原型与函数定义匹配
-// C&#43;&#43; 的函数原型与函数定义是严格匹配的 void func(); // 这个函数不能接受任何参数  // 而在C语言中 void func(); // 这个函数能接受任意数量的参数   NULL vs nullptr
-// 在 C&#43;&#43; 中，用 nullptr 代替 C 语言中的 NULL int* ip = nullptr;   同文件
-// C&#43;&#43; 也可以使用 C 语言的标准头文件， // 但是需要加上前缀 “c” 并去掉末尾的 “.h”。 #include &lt;cstdio&gt;  ">
+<meta name="description" content=" C&#43;&#43; 与 C 语言的差异 # 字符字面量的大小
+// 在C&#43;&#43;中，字符字面量的大小是一个字节。 sizeof(&#39;c&#39;) == 1 // 在C语言中，字符字面量的大小与int相同。 sizeof(&#39;c&#39;) == sizeof(10) 函数原型与函数定义匹配
+// C&#43;&#43; 的函数原型与函数定义是严格匹配的 void func(); // 这个函数不能接受任何参数 // 而在C语言中 void func(); // 这个函数能接受任意数量的参数 NULL vs nullptr
+// 在 C&#43;&#43; 中，用 nullptr 代替 C 语言中的 NULL int* ip = nullptr; 同文件
+// C&#43;&#43; 也可以使用 C 语言的标准头文件， // 但是需要加上前缀 “c” 并去掉末尾的 “.h”。 #include &lt;cstdio&gt; ">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="与 C 的差异" />
-<meta property="og:description" content="C&#43;&#43; 与 C 语言的差异 #    字符字面量的大小
-// 在C&#43;&#43;中，字符字面量的大小是一个字节。 sizeof(&#39;c&#39;) == 1  // 在C语言中，字符字面量的大小与int相同。 sizeof(&#39;c&#39;) == sizeof(10)   函数原型与函数定义匹配
-// C&#43;&#43; 的函数原型与函数定义是严格匹配的 void func(); // 这个函数不能接受任何参数  // 而在C语言中 void func(); // 这个函数能接受任意数量的参数   NULL vs nullptr
-// 在 C&#43;&#43; 中，用 nullptr 代替 C 语言中的 NULL int* ip = nullptr;   同文件
-// C&#43;&#43; 也可以使用 C 语言的标准头文件， // 但是需要加上前缀 “c” 并去掉末尾的 “.h”。 #include &lt;cstdio&gt;  " />
+<meta property="og:description" content=" C&#43;&#43; 与 C 语言的差异 # 字符字面量的大小
+// 在C&#43;&#43;中，字符字面量的大小是一个字节。 sizeof(&#39;c&#39;) == 1 // 在C语言中，字符字面量的大小与int相同。 sizeof(&#39;c&#39;) == sizeof(10) 函数原型与函数定义匹配
+// C&#43;&#43; 的函数原型与函数定义是严格匹配的 void func(); // 这个函数不能接受任何参数 // 而在C语言中 void func(); // 这个函数能接受任意数量的参数 NULL vs nullptr
+// 在 C&#43;&#43; 中，用 nullptr 代替 C 语言中的 NULL int* ip = nullptr; 同文件
+// C&#43;&#43; 也可以使用 C 语言的标准头文件， // 但是需要加上前缀 “c” 并去掉末尾的 “.h”。 #include &lt;cstdio&gt; " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/study-cpp/docs/basic/grammar/keyword/vs-c/" /><meta property="article:section" content="docs" />
 
@@ -25,7 +25,7 @@
 <link rel="manifest" href="/study-cpp/manifest.json">
 <link rel="icon" href="/study-cpp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/study-cpp/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/study-cpp/en.search.min.6bba4d722569040f9d4d490a0a053a62241cf31dd21dbdbf8b82c27557650f8a.js" integrity="sha256-a7pNciVpBA&#43;dTUkKCgU6YiQc8x3SHb2/i4LCdVdlD4o="></script>
+<script defer src="/study-cpp/en.search.min.09b42fe184cad721b576d63f675d6042c49193e5356d0786bb7ac6e74f799ba7.js" integrity="sha256-CbQv4YTK1yG1dtY/Z11gQsSRk&#43;U1bQeGu3rG5095m6c="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
