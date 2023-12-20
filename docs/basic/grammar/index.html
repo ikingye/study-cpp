@@ -2,11 +2,12 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.99.1" />
+  <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="C&#43;&#43; 语法 #  main 函数 #  int main(int argc, char** argv) { return Envoy::MainCommon::main(argc, argv); } include #  我们使用#include，一般是一下两个目的：
- 导入 typedef，#define，const 变量等宏配置； 使用在别的 cpp 文件中定义或者静态库定义的函数或者类。   头文件只能声明函数，函数的定义要放到对应的 cpp 文件中，只能 #include 该头文件，而不能 #include 其 cpp 源文件。  #include &quot;&quot; 与 #include &lt;&gt; #   若 #include &quot;&quot; 查找成功，则遮蔽 #include &lt;&gt; 所能找到的同名文件；否则再按照 #include &lt;&gt; 的方式查找文件  一般来说 #include &lt;&gt; 的查找位置是标准库头文件所在目录， #include &quot;&quot; 的查找位置是当前源文件所在目录。不过这些都可由编译器调用参数等配置更改    参考：">
+<meta name="description" content="C&#43;&#43; 语法 # main 函数 # int main(int argc, char** argv) { return Envoy::MainCommon::main(argc, argv); } include # 我们使用#include，一般是一下两个目的：
+导入 typedef，#define，const 变量等宏配置； 使用在别的 cpp 文件中定义或者静态库定义的函数或者类。 头文件只能声明函数，函数的定义要放到对应的 cpp 文件中，只能 #include 该头文件，而不能 #include 其 cpp 源文件。 #include &quot;&quot; 与 #include &lt;&gt; # 若 #include &quot;&quot; 查找成功，则遮蔽 #include &lt;&gt; 所能找到的同名文件；否则再按照 #include &lt;&gt; 的方式查找文件 一般来说 #include &lt;&gt; 的查找位置是标准库头文件所在目录， #include &quot;&quot; 的查找位置是当前源文件所在目录。不过这些都可由编译器调用参数等配置更改 参考：
+C&#43;&#43; #include &quot; &quot; 与 &lt;&gt;有什么区别？ ifndef 与 #pragma once # #ifndef &lt;标识&gt; #define &lt;标识&gt; #endif namespace # 无名命名空间和 static 是同样的道理，都是只在本文件内有效，无法被其它文件引用。 命名空间可以嵌套：abcd::efgh::ijk::A 在通常的编程规范里，严禁在头文件中 using 命名空间 using namespace # 这个指令会告诉编译器，后续的代码将使用指定的命名空间中的名称">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="1.1 语法" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -16,7 +17,7 @@
 <link rel="manifest" href="/study-cpp/manifest.json">
 <link rel="icon" href="/study-cpp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/study-cpp/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/study-cpp/en.search.min.a07ee43a8ef7bbd570e54887cf632017872f5a0b3b61188e7de00aef974dfac7.js" integrity="sha256-oH7kOo73u9Vw5UiHz2MgF4cvWgs7YRiOfeAK75dN&#43;sc="></script>
+<script defer src="/study-cpp/en.search.min.657c8dc3e444b1a57981383711532c7bf71560790e86ba9d96f0223309013b46.js" integrity="sha256-ZXyNw&#43;REsaV5gTg3EVMse/cVYHkOhrqdlvAiMwkBO0Y="></script>
 <link rel="alternate" type="application/rss+xml" href="https://kingye.me/study-cpp/docs/basic/grammar/index.xml" title="C++ 学习笔记" />
 <!--
 Made with Book Theme

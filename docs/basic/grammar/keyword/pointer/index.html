@@ -2,14 +2,18 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.99.1" />
+  <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="C&#43;&#43; 指针 #  智能指针 #     指针类别 支持 备注     unique_ptr C&#43;&#43; 11 拥有独有对象所有权语义的智能指针   shared_ptr C&#43;&#43; 11 拥有共享对象所有权语义的智能指针   weak_ptr C&#43;&#43; 11 到 std::shared_ptr 所管理对象的弱引用   auto_ptr C&#43;&#43; 17 中移除 拥有严格对象所有权语义的智能指针    unique_ptr #  std::unique_ptr 是通过指针占有并管理另一对象，并在 unique_ptr 离开作用域时释放该对象的智能指针。在下列两者之一发生时用关联的删除器释放对象：
- 销毁了管理的 unique_ptr 对象 通过 operator= 或 reset () 赋值另一指针给管理的 unique_ptr 对象。  shared_ptr #  std::shared_ptr 是通过指针保持对象共享所有权的智能指针。多个 shared_ptr 对象可占有同一对象。下列情况之一出现时销毁对象并解分配其内存：">
+<meta name="description" content="C&#43;&#43; 指针 # 智能指针 # 指针类别 支持 备注 unique_ptr C&#43;&#43; 11 拥有独有对象所有权语义的智能指针 shared_ptr C&#43;&#43; 11 拥有共享对象所有权语义的智能指针 weak_ptr C&#43;&#43; 11 到 std::shared_ptr 所管理对象的弱引用 auto_ptr C&#43;&#43; 17 中移除 拥有严格对象所有权语义的智能指针 unique_ptr # std::unique_ptr 是通过指针占有并管理另一对象，并在 unique_ptr 离开作用域时释放该对象的智能指针。在下列两者之一发生时用关联的删除器释放对象：
+销毁了管理的 unique_ptr 对象 通过 operator= 或 reset () 赋值另一指针给管理的 unique_ptr 对象。 shared_ptr # std::shared_ptr 是通过指针保持对象共享所有权的智能指针。多个 shared_ptr 对象可占有同一对象。下列情况之一出现时销毁对象并解分配其内存：
+最后剩下的占有对象的 shared_ptr 被销毁； 最后剩下的占有对象的 shared_ptr 被通过 operator= 或 reset () 赋值为另一指针。 有两种方式创建 shared_ptr ：
+void main( ) { shared_ptr&lt;int&gt; sptr1( new int ); // 使用 make_shared 宏可以加速创建的过程 // 因为 shared_ptr 主动分配内存并且保存引用计数 (reference count) shared_ptr&lt;int&gt; sptr2 = make_shared&lt;int&gt;(100); } 参考：C&#43;&#43; 智能指针 - 内存泄露的惨痛经历">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="指针" />
-<meta property="og:description" content="C&#43;&#43; 指针 #  智能指针 #     指针类别 支持 备注     unique_ptr C&#43;&#43; 11 拥有独有对象所有权语义的智能指针   shared_ptr C&#43;&#43; 11 拥有共享对象所有权语义的智能指针   weak_ptr C&#43;&#43; 11 到 std::shared_ptr 所管理对象的弱引用   auto_ptr C&#43;&#43; 17 中移除 拥有严格对象所有权语义的智能指针    unique_ptr #  std::unique_ptr 是通过指针占有并管理另一对象，并在 unique_ptr 离开作用域时释放该对象的智能指针。在下列两者之一发生时用关联的删除器释放对象：
- 销毁了管理的 unique_ptr 对象 通过 operator= 或 reset () 赋值另一指针给管理的 unique_ptr 对象。  shared_ptr #  std::shared_ptr 是通过指针保持对象共享所有权的智能指针。多个 shared_ptr 对象可占有同一对象。下列情况之一出现时销毁对象并解分配其内存：" />
+<meta property="og:description" content="C&#43;&#43; 指针 # 智能指针 # 指针类别 支持 备注 unique_ptr C&#43;&#43; 11 拥有独有对象所有权语义的智能指针 shared_ptr C&#43;&#43; 11 拥有共享对象所有权语义的智能指针 weak_ptr C&#43;&#43; 11 到 std::shared_ptr 所管理对象的弱引用 auto_ptr C&#43;&#43; 17 中移除 拥有严格对象所有权语义的智能指针 unique_ptr # std::unique_ptr 是通过指针占有并管理另一对象，并在 unique_ptr 离开作用域时释放该对象的智能指针。在下列两者之一发生时用关联的删除器释放对象：
+销毁了管理的 unique_ptr 对象 通过 operator= 或 reset () 赋值另一指针给管理的 unique_ptr 对象。 shared_ptr # std::shared_ptr 是通过指针保持对象共享所有权的智能指针。多个 shared_ptr 对象可占有同一对象。下列情况之一出现时销毁对象并解分配其内存：
+最后剩下的占有对象的 shared_ptr 被销毁； 最后剩下的占有对象的 shared_ptr 被通过 operator= 或 reset () 赋值为另一指针。 有两种方式创建 shared_ptr ：
+void main( ) { shared_ptr&lt;int&gt; sptr1( new int ); // 使用 make_shared 宏可以加速创建的过程 // 因为 shared_ptr 主动分配内存并且保存引用计数 (reference count) shared_ptr&lt;int&gt; sptr2 = make_shared&lt;int&gt;(100); } 参考：C&#43;&#43; 智能指针 - 内存泄露的惨痛经历" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/study-cpp/docs/basic/grammar/keyword/pointer/" /><meta property="article:section" content="docs" />
 
@@ -19,7 +23,7 @@
 <link rel="manifest" href="/study-cpp/manifest.json">
 <link rel="icon" href="/study-cpp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/study-cpp/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/study-cpp/en.search.min.a07ee43a8ef7bbd570e54887cf632017872f5a0b3b61188e7de00aef974dfac7.js" integrity="sha256-oH7kOo73u9Vw5UiHz2MgF4cvWgs7YRiOfeAK75dN&#43;sc="></script>
+<script defer src="/study-cpp/en.search.min.657c8dc3e444b1a57981383711532c7bf71560790e86ba9d96f0223309013b46.js" integrity="sha256-ZXyNw&#43;REsaV5gTg3EVMse/cVYHkOhrqdlvAiMwkBO0Y="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book

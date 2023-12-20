@@ -4,19 +4,15 @@
     <title>1.3 编程规范 on C&#43;&#43; 学习笔记</title>
     <link>https://kingye.me/study-cpp/docs/basic/spec/</link>
     <description>Recent content in 1.3 编程规范 on C&#43;&#43; 学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/study-cpp/docs/basic/spec/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://kingye.me/study-cpp/docs/basic/spec/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C/C&#43;&#43; 安全规则集合</title>
       <link>https://kingye.me/study-cpp/docs/basic/spec/safe-rules/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kingye.me/study-cpp/docs/basic/spec/safe-rules/</guid>
-      <description>来源： Qihoo360/safe-rules C/C++ 安全规则集合 #   Bjarne Stroustrup: “C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do it blows your whole leg off.”
-  针对 C、C++ 语言，本文收录了 467 种需要重点关注的问题，可为制定编程规范提供依据，也可为代码审计以及相关培训提供指导意见，适用于桌面、服务端以及嵌入式等软件系统。 每个问题对应一条规则，每条规则可直接作为规范条款或审计检查点，本文是适用于不同应用场景的规则集合，读者可根据自身需求从中选取某个子集作为规范或审计依据，从而提高软件产品的安全性。 
-规则说明 #  规则按如下主题分为 17 个类别：
- Security：敏感信息防护 Resource：资源管理 Precompile：预处理、宏、注释 Global：全局及命名空间作用域 Type：类型设计与实现 Declaration：声明 Exception：异常 Function：函数实现 Control：流程控制 Expression：表达式 Literal：常量 Cast：类型转换 Buffer：缓冲区 Pointer：指针 Interruption：中断与信号处理 Concurrency：异步与并发 Style：样式与风格  每条规则包括：
- 编号：规则在本文中的章节编号，以“R”开头，称为 Section-ID 名称：用简练的短语描述违反规则的状况，以“ID_”开头，称为 Fault-ID 标题：规则的定义 说明：规则设立的原因、违反规则的后果、示例、改进建议、参照依据、参考资料等内容  如果违反规则，后果的严重程度分为：</description>
+      <description>来源： Qihoo360/safe-rules C/C++ 安全规则集合 # Bjarne Stroustrup: “C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do it blows your whole leg off.”&#xA;针对 C、C++ 语言，本文收录了 467 种需要重点关注的问题，可为制定编程规范提供依据，也可为代码审计以及相关培训提供指导意见，适用于桌面、服务端以及嵌入式等软件系统。 每个问题对应一条规则，每条规则可直接作为规范条款或审计检查点，本文是适用于不同应用场景的规则集合，读者可根据自身需求从中选取某个子集作为规范或审计依据，从而提高软件产品的安全性。 规则说明 # 规则按如下主题分为 17 个类别：&#xA;Security：敏感信息防护 Resource：资源管理 Precompile：预处理、宏、注释 Global：全局及命名空间作用域 Type：类型设计与实现 Declaration：声明 Exception：异常 Function：函数实现 Control：流程控制 Expression：表达式 Literal：常量 Cast：类型转换 Buffer：缓冲区 Pointer：指针 Interruption：中断与信号处理 Concurrency：异步与并发 Style：样式与风格 每条规则包括：&#xA;编号：规则在本文中的章节编号，以“R”开头，称为 Section-ID 名称：用简练的短语描述违反规则的状况，以“ID_”开头，称为 Fault-ID 标题：规则的定义 说明：规则设立的原因、违反规则的后果、示例、改进建议、参照依据、参考资料等内容 如果违反规则，后果的严重程度分为：&#xA;Error：直接导致错误或形成安全漏洞 Warning：可导致错误或形成安全隐患 Suspicious：可疑的代码，需进一步排查 Suggestion：代码质量降低，应依照建议改进 规则的说明包含：</description>
     </item>
-    
   </channel>
 </rss>
