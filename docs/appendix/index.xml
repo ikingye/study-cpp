@@ -1,32 +1,110 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>第四部分 附录 on C&#43;&#43; 学习笔记</title>
-    <link>https://kingye.me/study-cpp/docs/appendix/</link>
-    <description>Recent content in 第四部分 附录 on C&#43;&#43; 学习笔记</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://kingye.me/study-cpp/docs/appendix/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>4.1 教程</title>
-      <link>https://kingye.me/study-cpp/docs/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/study-cpp/docs/appendix/tutorial/</guid>
-      <description>&lt;h1 id=&#34;教程&#34;&gt;&#xA;  教程&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%95%99%e7%a8%8b&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200611203221.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;基础&#34;&gt;&#xA;  基础&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%9f%ba%e7%a1%80&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://learnxinyminutes.com/docs/zh-cn/c&amp;#43;&amp;#43;-cn/&#34;&gt;learn c++ in y minutes&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/question/39169728&#34;&gt;C++ 后台开发有哪些练基础的开源项目？&lt;/a&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/yedf/handy&#34;&gt;yedf/handy&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/yedf/handy.svg&#34; alt=&#34;Github stars&#34; /&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;进阶&#34;&gt;&#xA;  进阶&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e8%bf%9b%e9%98%b6&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://vrlab.org.cn/~zhuq/download/%E9%AB%98%E8%B4%A8%E9%87%8F%E7%BC%96%E7%A8%8B%E6%8C%87%E5%8D%97.pdf&#34;&gt;林锐 博士 - 高质量 C++/C 编程指南&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>4.2 面试题</title>
-      <link>https://kingye.me/study-cpp/docs/appendix/interview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/study-cpp/docs/appendix/interview/</guid>
-      <description>&lt;h1 id=&#34;面试题&#34;&gt;&#xA;  面试题&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e9%9d%a2%e8%af%95%e9%a2%98&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;基础题&#34;&gt;&#xA;  基础题&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%9f%ba%e7%a1%80%e9%a2%98&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;huihutinterviewhttpsgithubcomhuihutinterview-github-starshttpsimgshieldsiogithubstarshuihutinterviewsvg&#34;&gt;&#xA;  &lt;a href=&#34;https://github.com/huihut/interview&#34;&gt;huihut/interview&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/huihut/interview.svg&#34; alt=&#34;Github stars&#34; /&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#huihutinterviewhttpsgithubcomhuihutinterview-github-starshttpsimgshieldsiogithubstarshuihutinterviewsvg&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;你遇到过哪些高质量的-c-面试httpswwwzhihucomquestion60911582&#34;&gt;&#xA;  &lt;a href=&#34;https://www.zhihu.com/question/60911582&#34;&gt;你遇到过哪些高质量的 C++ 面试？&lt;/a&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%bd%a0%e9%81%87%e5%88%b0%e8%bf%87%e5%93%aa%e4%ba%9b%e9%ab%98%e8%b4%a8%e9%87%8f%e7%9a%84-c-%e9%9d%a2%e8%af%95httpswwwzhihucomquestion60911582&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;what-is-the-best-c-interview-question-closedhttpssoftwareengineeringstackexchangecomquestions25836what-is-the-best-c-interview-question&#34;&gt;&#xA;  &lt;a href=&#34;https://softwareengineering.stackexchange.com/questions/25836/what-is-the-best-c-interview-question&#34;&gt;What is the best C++ interview question? [closed]&lt;/a&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#what-is-the-best-c-interview-question-closedhttpssoftwareengineeringstackexchangecomquestions25836what-is-the-best-c-interview-question&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;c-faqhttpwwwcstechnionacilusersyechielc-faqindexhtml&#34;&gt;&#xA;  &lt;a href=&#34;http://www.cs.technion.ac.il/users/yechiel/c&amp;#43;&amp;#43;-faq/index.html&#34;&gt;C++ FAQ&lt;/a&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#c-faqhttpwwwcstechnionacilusersyechielc-faqindexhtml&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;volatile-有什么用&#34;&gt;&#xA;  volatile 有什么用？&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#volatile-%e6%9c%89%e4%bb%80%e4%b9%88%e7%94%a8&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;告诉编译器不应对这样的对象进行优化&lt;/li&gt;&#xA;&lt;li&gt;每次访问时都必须从内存中取出值&#xA;&lt;ul&gt;&#xA;&lt;li&gt;没有被 volatile 修饰的变量，可能由于编译器的优化，从 &lt;strong&gt;CPU 寄存器&lt;/strong&gt;中取值&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;const 可以是 volatile （如只读的状态寄存器）&lt;/li&gt;&#xA;&lt;li&gt;指针可以是 volatile&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;进阶题&#34;&gt;&#xA;  进阶题&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e8%bf%9b%e9%98%b6%e9%a2%98&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;为什么-c-的-member-function-template-不能是-virtual-的&#34;&gt;&#xA;  为什么 C++ 的 member function template 不能是 virtual 的&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%b8%ba%e4%bb%80%e4%b9%88-c-%e7%9a%84-member-function-template-%e4%b8%8d%e8%83%bd%e6%98%af-virtual-%e7%9a%84&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;比如，下面的代码是不合法的：&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Animal&lt;/span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;template&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;typename&lt;/span&gt; T&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;virtual&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; make_sound(){&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;//...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;};&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;因为 C++ 的编译与链接模型是 &amp;ldquo;分离&amp;rdquo; 的 (至少是部分原因吧)。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>4.3 关注项目</title>
-      <link>https://kingye.me/study-cpp/docs/appendix/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/study-cpp/docs/appendix/attention/</guid>
-      <description>&lt;h1 id=&#34;关注项目&#34;&gt;&#xA;  关注项目&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%85%b3%e6%b3%a8%e9%a1%b9%e7%9b%ae&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;googlegloghttpsgithubcomgoogleglog-github-starshttpsimgshieldsiogithubstarsgoogleglogsvg&#34;&gt;&#xA;  &lt;a href=&#34;https://github.com/google/glog&#34;&gt;google/glog&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/google/glog.svg&#34; alt=&#34;Github stars&#34; /&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#googlegloghttpsgithubcomgoogleglog-github-starshttpsimgshieldsiogithubstarsgoogleglogsvg&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;C++ implementation of the Google logging module&lt;/p&gt;&#xA;&lt;h2 id=&#34;grpchttpsgithubcomgrpcgrpc-github-starshttpsimgshieldsiogithubstarsgrpcgrpcsvg&#34;&gt;&#xA;  &lt;a href=&#34;https://github.com/grpc/grpc&#34;&gt;gRPC&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/grpc/grpc.svg&#34; alt=&#34;Github stars&#34; /&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#grpchttpsgithubcomgrpcgrpc-github-starshttpsimgshieldsiogithubstarsgrpcgrpcsvg&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;gRPC is a modern, open source, high-performance remote procedure call (RPC) framework that can run anywhere. gRPC enables client and server applications to communicate transparently, and simplifies the building of connected systems.&lt;/p&gt;&#xA;&lt;p&gt;grpc.io&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;web&#34;&gt;&#xA;  web&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#web&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;ipkncrowhttpsgithubcomipkncrow-github-starshttpsimgshieldsiogithubstarsipkncrowsvg&#34;&gt;&#xA;  &lt;a href=&#34;https://github.com/ipkn/crow&#34;&gt;ipkn/crow&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/ipkn/crow.svg&#34; alt=&#34;Github stars&#34; /&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#ipkncrowhttpsgithubcomipkncrow-github-starshttpsimgshieldsiogithubstarsipkncrowsvg&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;Crow is very fast and easy to use C++ micro web framework (inspired by Python Flask)&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>第四部分 附录 on C++ 学习笔记</title><link>https://kingye.me/study-cpp/docs/appendix/</link><description>Recent content in 第四部分 附录 on C++ 学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/study-cpp/docs/appendix/index.xml" rel="self" type="application/rss+xml"/><item><title>4.1 教程</title><link>https://kingye.me/study-cpp/docs/appendix/tutorial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-cpp/docs/appendix/tutorial/</guid><description>&lt;h1 id="教程">
+ 教程
+ &lt;a class="anchor" href="#%e6%95%99%e7%a8%8b">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200611203221.png" alt="" />&lt;/p>
+&lt;h2 id="基础">
+ 基础
+ &lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://learnxinyminutes.com/docs/zh-cn/c&amp;#43;&amp;#43;-cn/">learn c++ in y minutes&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.zhihu.com/question/39169728">C++ 后台开发有哪些练基础的开源项目？&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/yedf/handy">yedf/handy&lt;/a> &lt;img src="https://img.shields.io/github/stars/yedf/handy.svg" alt="Github stars" />&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="进阶">
+ 进阶
+ &lt;a class="anchor" href="#%e8%bf%9b%e9%98%b6">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://vrlab.org.cn/~zhuq/download/%E9%AB%98%E8%B4%A8%E9%87%8F%E7%BC%96%E7%A8%8B%E6%8C%87%E5%8D%97.pdf">林锐 博士 - 高质量 C++/C 编程指南&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>4.2 面试题</title><link>https://kingye.me/study-cpp/docs/appendix/interview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-cpp/docs/appendix/interview/</guid><description>&lt;h1 id="面试题">
+ 面试题
+ &lt;a class="anchor" href="#%e9%9d%a2%e8%af%95%e9%a2%98">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="基础题">
+ 基础题
+ &lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80%e9%a2%98">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="huihutinterviewhttpsgithubcomhuihutinterview-github-starshttpsimgshieldsiogithubstarshuihutinterviewsvg">
+ &lt;a href="https://github.com/huihut/interview">huihut/interview&lt;/a> &lt;img src="https://img.shields.io/github/stars/huihut/interview.svg" alt="Github stars" />
+ &lt;a class="anchor" href="#huihutinterviewhttpsgithubcomhuihutinterview-github-starshttpsimgshieldsiogithubstarshuihutinterviewsvg">#&lt;/a>
+&lt;/h3>
+&lt;h3 id="你遇到过哪些高质量的-c-面试httpswwwzhihucomquestion60911582">
+ &lt;a href="https://www.zhihu.com/question/60911582">你遇到过哪些高质量的 C++ 面试？&lt;/a>
+ &lt;a class="anchor" href="#%e4%bd%a0%e9%81%87%e5%88%b0%e8%bf%87%e5%93%aa%e4%ba%9b%e9%ab%98%e8%b4%a8%e9%87%8f%e7%9a%84-c-%e9%9d%a2%e8%af%95httpswwwzhihucomquestion60911582">#&lt;/a>
+&lt;/h3>
+&lt;h3 id="what-is-the-best-c-interview-question-closedhttpssoftwareengineeringstackexchangecomquestions25836what-is-the-best-c-interview-question">
+ &lt;a href="https://softwareengineering.stackexchange.com/questions/25836/what-is-the-best-c-interview-question">What is the best C++ interview question? [closed]&lt;/a>
+ &lt;a class="anchor" href="#what-is-the-best-c-interview-question-closedhttpssoftwareengineeringstackexchangecomquestions25836what-is-the-best-c-interview-question">#&lt;/a>
+&lt;/h3>
+&lt;h3 id="c-faqhttpwwwcstechnionacilusersyechielc-faqindexhtml">
+ &lt;a href="http://www.cs.technion.ac.il/users/yechiel/c&amp;#43;&amp;#43;-faq/index.html">C++ FAQ&lt;/a>
+ &lt;a class="anchor" href="#c-faqhttpwwwcstechnionacilusersyechielc-faqindexhtml">#&lt;/a>
+&lt;/h3>
+&lt;hr>
+&lt;h3 id="volatile-有什么用">
+ volatile 有什么用？
+ &lt;a class="anchor" href="#volatile-%e6%9c%89%e4%bb%80%e4%b9%88%e7%94%a8">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>告诉编译器不应对这样的对象进行优化&lt;/li>
+&lt;li>每次访问时都必须从内存中取出值
+&lt;ul>
+&lt;li>没有被 volatile 修饰的变量，可能由于编译器的优化，从 &lt;strong>CPU 寄存器&lt;/strong>中取值&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>const 可以是 volatile （如只读的状态寄存器）&lt;/li>
+&lt;li>指针可以是 volatile&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;hr>
+&lt;h2 id="进阶题">
+ 进阶题
+ &lt;a class="anchor" href="#%e8%bf%9b%e9%98%b6%e9%a2%98">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="为什么-c-的-member-function-template-不能是-virtual-的">
+ 为什么 C++ 的 member function template 不能是 virtual 的
+ &lt;a class="anchor" href="#%e4%b8%ba%e4%bb%80%e4%b9%88-c-%e7%9a%84-member-function-template-%e4%b8%8d%e8%83%bd%e6%98%af-virtual-%e7%9a%84">#&lt;/a>
+&lt;/h3>
+&lt;p>比如，下面的代码是不合法的：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Animal&lt;/span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span>&lt;span style="color:#f92672">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">template&lt;/span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">typename&lt;/span> T&lt;span style="color:#f92672">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">virtual&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> make_sound(){
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">//...
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>};
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>因为 C++ 的编译与链接模型是 &amp;ldquo;分离&amp;rdquo; 的 (至少是部分原因吧)。&lt;/p></description></item><item><title>4.3 关注项目</title><link>https://kingye.me/study-cpp/docs/appendix/attention/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-cpp/docs/appendix/attention/</guid><description>&lt;h1 id="关注项目">
+ 关注项目
+ &lt;a class="anchor" href="#%e5%85%b3%e6%b3%a8%e9%a1%b9%e7%9b%ae">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="googlegloghttpsgithubcomgoogleglog-github-starshttpsimgshieldsiogithubstarsgoogleglogsvg">
+ &lt;a href="https://github.com/google/glog">google/glog&lt;/a> &lt;img src="https://img.shields.io/github/stars/google/glog.svg" alt="Github stars" />
+ &lt;a class="anchor" href="#googlegloghttpsgithubcomgoogleglog-github-starshttpsimgshieldsiogithubstarsgoogleglogsvg">#&lt;/a>
+&lt;/h2>
+&lt;p>C++ implementation of the Google logging module&lt;/p>
+&lt;h2 id="grpchttpsgithubcomgrpcgrpc-github-starshttpsimgshieldsiogithubstarsgrpcgrpcsvg">
+ &lt;a href="https://github.com/grpc/grpc">gRPC&lt;/a> &lt;img src="https://img.shields.io/github/stars/grpc/grpc.svg" alt="Github stars" />
+ &lt;a class="anchor" href="#grpchttpsgithubcomgrpcgrpc-github-starshttpsimgshieldsiogithubstarsgrpcgrpcsvg">#&lt;/a>
+&lt;/h2>
+&lt;p>gRPC is a modern, open source, high-performance remote procedure call (RPC) framework that can run anywhere. gRPC enables client and server applications to communicate transparently, and simplifies the building of connected systems.&lt;/p>
+&lt;p>grpc.io&lt;/p>
+&lt;hr>
+&lt;h2 id="web">
+ web
+ &lt;a class="anchor" href="#web">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="ipkncrowhttpsgithubcomipkncrow-github-starshttpsimgshieldsiogithubstarsipkncrowsvg">
+ &lt;a href="https://github.com/ipkn/crow">ipkn/crow&lt;/a> &lt;img src="https://img.shields.io/github/stars/ipkn/crow.svg" alt="Github stars" />
+ &lt;a class="anchor" href="#ipkncrowhttpsgithubcomipkncrow-github-starshttpsimgshieldsiogithubstarsipkncrowsvg">#&lt;/a>
+&lt;/h3>
+&lt;p>Crow is very fast and easy to use C++ micro web framework (inspired by Python Flask)&lt;/p></description></item></channel></rss>

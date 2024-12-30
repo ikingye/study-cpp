@@ -1,18 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>1.4 其他 on C&#43;&#43; 学习笔记</title>
-    <link>https://kingye.me/study-cpp/docs/basic/others/</link>
-    <description>Recent content in 1.4 其他 on C&#43;&#43; 学习笔记</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://kingye.me/study-cpp/docs/basic/others/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>版本</title>
-      <link>https://kingye.me/study-cpp/docs/basic/others/version/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/study-cpp/docs/basic/others/version/</guid>
-      <description>&lt;h1 id=&#34;c-版本&#34;&gt;&#xA;  C++ 版本&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#c-%e7%89%88%e6%9c%ac&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;c-referencehttpsencppreferencecomwcpp&#34;&gt;&#xA;  &lt;a href=&#34;https://en.cppreference.com/w/cpp&#34;&gt;C++ reference&lt;/a&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#c-referencehttpsencppreferencecomwcpp&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;c23&#34;&gt;&#xA;  C++23&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#c23&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;c20&#34;&gt;&#xA;  C++20&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#c20&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;c17&#34;&gt;&#xA;  C++17&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#c17&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;c14&#34;&gt;&#xA;  C++14&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#c14&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;c11&#34;&gt;&#xA;  C++11&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#c11&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;c03&#34;&gt;&#xA;  C++03&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#c03&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;c98&#34;&gt;&#xA;  C++98&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#c98&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.4 其他 on C++ 学习笔记</title><link>https://kingye.me/study-cpp/docs/basic/others/</link><description>Recent content in 1.4 其他 on C++ 学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/study-cpp/docs/basic/others/index.xml" rel="self" type="application/rss+xml"/><item><title>版本</title><link>https://kingye.me/study-cpp/docs/basic/others/version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-cpp/docs/basic/others/version/</guid><description>&lt;h1 id="c-版本">
+ C++ 版本
+ &lt;a class="anchor" href="#c-%e7%89%88%e6%9c%ac">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="c-referencehttpsencppreferencecomwcpp">
+ &lt;a href="https://en.cppreference.com/w/cpp">C++ reference&lt;/a>
+ &lt;a class="anchor" href="#c-referencehttpsencppreferencecomwcpp">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="c23">
+ C++23
+ &lt;a class="anchor" href="#c23">#&lt;/a>
+&lt;/h3>
+&lt;hr>
+&lt;h3 id="c20">
+ C++20
+ &lt;a class="anchor" href="#c20">#&lt;/a>
+&lt;/h3>
+&lt;hr>
+&lt;h3 id="c17">
+ C++17
+ &lt;a class="anchor" href="#c17">#&lt;/a>
+&lt;/h3>
+&lt;hr>
+&lt;h3 id="c14">
+ C++14
+ &lt;a class="anchor" href="#c14">#&lt;/a>
+&lt;/h3>
+&lt;hr>
+&lt;h3 id="c11">
+ C++11
+ &lt;a class="anchor" href="#c11">#&lt;/a>
+&lt;/h3>
+&lt;hr>
+&lt;h3 id="c03">
+ C++03
+ &lt;a class="anchor" href="#c03">#&lt;/a>
+&lt;/h3>
+&lt;hr>
+&lt;h3 id="c98">
+ C++98
+ &lt;a class="anchor" href="#c98">#&lt;/a>
+&lt;/h3></description></item></channel></rss>
