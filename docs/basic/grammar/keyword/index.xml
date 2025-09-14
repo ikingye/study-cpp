@@ -1,242 +1,266 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.1.2 关键字 on C++ 学习笔记</title><link>https://kingye.me/study-cpp/docs/basic/grammar/keyword/</link><description>Recent content in 1.1.2 关键字 on C++ 学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/study-cpp/docs/basic/grammar/keyword/index.xml" rel="self" type="application/rss+xml"/><item><title>class</title><link>https://kingye.me/study-cpp/docs/basic/grammar/keyword/class/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-cpp/docs/basic/grammar/keyword/class/</guid><description>&lt;h1 id="class">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.1.2 关键字 on C++ 学习笔记</title><link>https://kingye.me/study-cpp/docs/basic/grammar/keyword/</link><description>Recent content in 1.1.2 关键字 on C++ 学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/study-cpp/docs/basic/grammar/keyword/index.xml" rel="self" type="application/rss+xml"/><item><title>class</title><link>https://kingye.me/study-cpp/docs/basic/grammar/keyword/class/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-cpp/docs/basic/grammar/keyword/class/</guid><description>&lt;h1 id="class"&gt;
  class
- &lt;a class="anchor" href="#class">#&lt;/a>
-&lt;/h1>
-&lt;p>建议：&lt;/p>
-&lt;ul>
-&lt;li>class 表示被封装的用户自定义类型，&lt;strong>不公开定义非静态&lt;/strong>数据成员，一般通过成员方法进行交互。&lt;/li>
-&lt;li>struct 表示&lt;strong>数据的简单集合&lt;/strong>，公开定义数据成员，只定义用于初始化数据成员的方法 (比如：构造 / 析构函数，&lt;code>initialize()&lt;/code>, &lt;code>reset()&lt;/code>, &lt;code>validate()&lt;/code>)。&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 简单的数据聚合，没有动作
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">struct&lt;/span> &lt;span style="color:#a6e22e">Coordinate&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> x;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> y;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> z;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>};
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 有动作的对象
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Cat&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">public&lt;/span>&lt;span style="color:#f92672">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">void&lt;/span> meow();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">private&lt;/span>&lt;span style="color:#f92672">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ...
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>};
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="class-vs-struct">
+ 
+ &lt;a class="anchor" href="#class"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;p&gt;建议：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;class 表示被封装的用户自定义类型，&lt;strong&gt;不公开定义非静态&lt;/strong&gt;数据成员，一般通过成员方法进行交互。&lt;/li&gt;
+&lt;li&gt;struct 表示&lt;strong&gt;数据的简单集合&lt;/strong&gt;，公开定义数据成员，只定义用于初始化数据成员的方法 (比如：构造 / 析构函数，&lt;code&gt;initialize()&lt;/code&gt;, &lt;code&gt;reset()&lt;/code&gt;, &lt;code&gt;validate()&lt;/code&gt;)。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// 简单的数据聚合，没有动作
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;struct&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Coordinate&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; x;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; y;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; z;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// 有动作的对象
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Cat&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; meow();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;private&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="class-vs-struct"&gt;
  class vs struct
- &lt;a class="anchor" href="#class-vs-struct">#&lt;/a>
-&lt;/h2>
-&lt;ul>
-&lt;li>默认继承权限
-&lt;ul>
-&lt;li>class: private&lt;/li>
-&lt;li>struct: public&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>成员的默认访问权限
-&lt;ul>
-&lt;li>class: private&lt;/li>
-&lt;li>struct: public&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>除了这两点，class 和 struct 基本就是一个东西。&lt;/p></description></item><item><title>与 C 的差异</title><link>https://kingye.me/study-cpp/docs/basic/grammar/keyword/vs-c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-cpp/docs/basic/grammar/keyword/vs-c/</guid><description>&lt;h1 id="c-与-c-语言的差异">
+ 
+ &lt;a class="anchor" href="#class-vs-struct"&gt;#&lt;/a&gt;
+ 
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;默认继承权限
+&lt;ul&gt;
+&lt;li&gt;class: private&lt;/li&gt;
+&lt;li&gt;struct: public&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;成员的默认访问权限
+&lt;ul&gt;
+&lt;li&gt;class: private&lt;/li&gt;
+&lt;li&gt;struct: public&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;除了这两点，class 和 struct 基本就是一个东西。&lt;/p&gt;</description></item><item><title>与 C 的差异</title><link>https://kingye.me/study-cpp/docs/basic/grammar/keyword/vs-c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-cpp/docs/basic/grammar/keyword/vs-c/</guid><description>&lt;h1 id="c-与-c-语言的差异"&gt;
  C++ 与 C 语言的差异
- &lt;a class="anchor" href="#c-%e4%b8%8e-c-%e8%af%ad%e8%a8%80%e7%9a%84%e5%b7%ae%e5%bc%82">#&lt;/a>
-&lt;/h1>
-&lt;ul>
-&lt;li>
-&lt;p>字符字面量的大小&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 在C++中，字符字面量的大小是一个字节。
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">sizeof&lt;/span>(&lt;span style="color:#e6db74">&amp;#39;c&amp;#39;&lt;/span>) &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 在C语言中，字符字面量的大小与int相同。
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">sizeof&lt;/span>(&lt;span style="color:#e6db74">&amp;#39;c&amp;#39;&lt;/span>) &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#66d9ef">sizeof&lt;/span>(&lt;span style="color:#ae81ff">10&lt;/span>)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
-&lt;li>
-&lt;p>函数原型与函数定义匹配&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// C++ 的函数原型与函数定义是严格匹配的
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">func&lt;/span>(); &lt;span style="color:#75715e">// 这个函数不能接受任何参数
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 而在C语言中
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">func&lt;/span>(); &lt;span style="color:#75715e">// 这个函数能接受任意数量的参数
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
-&lt;li>
-&lt;p>&lt;code>NULL&lt;/code> vs &lt;code>nullptr&lt;/code>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 在 C++ 中，用 nullptr 代替 C 语言中的 NULL
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">*&lt;/span> ip &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">nullptr&lt;/span>;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
-&lt;li>
-&lt;p>同文件&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// C++ 也可以使用 C 语言的标准头文件，
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 但是需要加上前缀 “c” 并去掉末尾的 “.h”。
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;cstdio&amp;gt;&lt;/span>&lt;span style="color:#75715e">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
-&lt;/ul></description></item><item><title>函数</title><link>https://kingye.me/study-cpp/docs/basic/grammar/keyword/function/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-cpp/docs/basic/grammar/keyword/function/</guid><description>&lt;h1 id="函数">
+ 
+ &lt;a class="anchor" href="#c-%e4%b8%8e-c-%e8%af%ad%e8%a8%80%e7%9a%84%e5%b7%ae%e5%bc%82"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;字符字面量的大小&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// 在C++中，字符字面量的大小是一个字节。
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;sizeof&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#39;c&amp;#39;&lt;/span&gt;) &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// 在C语言中，字符字面量的大小与int相同。
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;sizeof&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#39;c&amp;#39;&lt;/span&gt;) &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;sizeof&lt;/span&gt;(&lt;span style="color:#ae81ff"&gt;10&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数原型与函数定义匹配&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// C++ 的函数原型与函数定义是严格匹配的
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;func&lt;/span&gt;(); &lt;span style="color:#75715e"&gt;// 这个函数不能接受任何参数
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// 而在C语言中
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;func&lt;/span&gt;(); &lt;span style="color:#75715e"&gt;// 这个函数能接受任意数量的参数
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;NULL&lt;/code&gt; vs &lt;code&gt;nullptr&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// 在 C++ 中，用 nullptr 代替 C 语言中的 NULL
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;&lt;span style="color:#f92672"&gt;*&lt;/span&gt; ip &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;nullptr&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;同文件&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// C++ 也可以使用 C 语言的标准头文件，
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// 但是需要加上前缀 “c” 并去掉末尾的 “.h”。
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;#include&lt;/span&gt; &lt;span style="color:#75715e"&gt;&amp;lt;cstdio&amp;gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>函数</title><link>https://kingye.me/study-cpp/docs/basic/grammar/keyword/function/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-cpp/docs/basic/grammar/keyword/function/</guid><description>&lt;h1 id="函数"&gt;
  函数
- &lt;a class="anchor" href="#%e5%87%bd%e6%95%b0">#&lt;/a>
-&lt;/h1>
-&lt;h2 id="函数参数">
+ 
+ &lt;a class="anchor" href="#%e5%87%bd%e6%95%b0"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;h2 id="函数参数"&gt;
  函数参数
- &lt;a class="anchor" href="#%e5%87%bd%e6%95%b0%e5%8f%82%e6%95%b0">#&lt;/a>
-&lt;/h2>
-&lt;p>参数默认值&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 你可以为函数的参数指定默认值，
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 默认参数必须放在所有的常规参数之后。
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">doSomethingWithInts&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> a, &lt;span style="color:#66d9ef">int&lt;/span> b &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>, &lt;span style="color:#66d9ef">int&lt;/span> c &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">4&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="函数重载">
+ 
+ &lt;a class="anchor" href="#%e5%87%bd%e6%95%b0%e5%8f%82%e6%95%b0"&gt;#&lt;/a&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;参数默认值&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// 你可以为函数的参数指定默认值，
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// 默认参数必须放在所有的常规参数之后。
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;doSomethingWithInts&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; a, &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; b &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;, &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; c &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;4&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="函数重载"&gt;
  函数重载
- &lt;a class="anchor" href="#%e5%87%bd%e6%95%b0%e9%87%8d%e8%bd%bd">#&lt;/a>
-&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// C++支持函数重载，你可以定义一组名称相同而参数不同的函数
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">print&lt;/span>(&lt;span style="color:#66d9ef">char&lt;/span> &lt;span style="color:#66d9ef">const&lt;/span>&lt;span style="color:#f92672">*&lt;/span> myString)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> printf(&lt;span style="color:#e6db74">&amp;#34;String %s&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, myString);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">print&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> myInt)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> printf(&lt;span style="color:#e6db74">&amp;#34;My int is %d&amp;#34;&lt;/span>, myInt);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(&lt;span style="color:#e6db74">&amp;#34;Hello&amp;#34;&lt;/span>); &lt;span style="color:#75715e">// 解析为 void print(const char*)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> print(&lt;span style="color:#ae81ff">15&lt;/span>); &lt;span style="color:#75715e">// 解析为 void print(int)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>指针</title><link>https://kingye.me/study-cpp/docs/basic/grammar/keyword/pointer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-cpp/docs/basic/grammar/keyword/pointer/</guid><description>&lt;h1 id="c-指针">
+ 
+ &lt;a class="anchor" href="#%e5%87%bd%e6%95%b0%e9%87%8d%e8%bd%bd"&gt;#&lt;/a&gt;
+ 
+&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// C++支持函数重载，你可以定义一组名称相同而参数不同的函数
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;char&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;const&lt;/span&gt;&lt;span style="color:#f92672"&gt;*&lt;/span&gt; myString)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; printf(&lt;span style="color:#e6db74"&gt;&amp;#34;String %s&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;\n&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;, myString);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; myInt)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; printf(&lt;span style="color:#e6db74"&gt;&amp;#34;My int is %d&amp;#34;&lt;/span&gt;, myInt);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; print(&lt;span style="color:#e6db74"&gt;&amp;#34;Hello&amp;#34;&lt;/span&gt;); &lt;span style="color:#75715e"&gt;// 解析为 void print(const char*)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; print(&lt;span style="color:#ae81ff"&gt;15&lt;/span&gt;); &lt;span style="color:#75715e"&gt;// 解析为 void print(int)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>指针</title><link>https://kingye.me/study-cpp/docs/basic/grammar/keyword/pointer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-cpp/docs/basic/grammar/keyword/pointer/</guid><description>&lt;h1 id="c-指针"&gt;
  C++ 指针
- &lt;a class="anchor" href="#c-%e6%8c%87%e9%92%88">#&lt;/a>
-&lt;/h1>
-&lt;h2 id="智能指针">
+ 
+ &lt;a class="anchor" href="#c-%e6%8c%87%e9%92%88"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;h2 id="智能指针"&gt;
  智能指针
- &lt;a class="anchor" href="#%e6%99%ba%e8%83%bd%e6%8c%87%e9%92%88">#&lt;/a>
-&lt;/h2>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>指针类别&lt;/th>
- &lt;th>支持&lt;/th>
- &lt;th>备注&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>&lt;code>unique_ptr&lt;/code>&lt;/td>
- &lt;td>C++ 11&lt;/td>
- &lt;td>拥有&lt;strong>独有&lt;/strong>对象所有权语义的智能指针&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;code>shared_ptr&lt;/code>&lt;/td>
- &lt;td>C++ 11&lt;/td>
- &lt;td>拥有&lt;strong>共享&lt;/strong>对象所有权语义的智能指针&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;code>weak_ptr&lt;/code>&lt;/td>
- &lt;td>C++ 11&lt;/td>
- &lt;td>到 std::shared_ptr 所管理对象的弱引用&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;code>auto_ptr&lt;/code>&lt;/td>
- &lt;td>C++ 17 中移除&lt;/td>
- &lt;td>拥有严格对象所有权语义的智能指针&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;h3 id="unique_ptr">
+ 
+ &lt;a class="anchor" href="#%e6%99%ba%e8%83%bd%e6%8c%87%e9%92%88"&gt;#&lt;/a&gt;
+ 
+&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;指针类别&lt;/th&gt;
+ &lt;th&gt;支持&lt;/th&gt;
+ &lt;th&gt;备注&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;unique_ptr&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;C++ 11&lt;/td&gt;
+ &lt;td&gt;拥有&lt;strong&gt;独有&lt;/strong&gt;对象所有权语义的智能指针&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;shared_ptr&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;C++ 11&lt;/td&gt;
+ &lt;td&gt;拥有&lt;strong&gt;共享&lt;/strong&gt;对象所有权语义的智能指针&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;weak_ptr&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;C++ 11&lt;/td&gt;
+ &lt;td&gt;到 std::shared_ptr 所管理对象的弱引用&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;auto_ptr&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;C++ 17 中移除&lt;/td&gt;
+ &lt;td&gt;拥有严格对象所有权语义的智能指针&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="unique_ptr"&gt;
  unique_ptr
- &lt;a class="anchor" href="#unique_ptr">#&lt;/a>
-&lt;/h3>
-&lt;p>std::unique_ptr 是通过指针占有并管理另一对象，并在 unique_ptr 离开作用域时释放该对象的智能指针。在下列两者之一发生时用关联的删除器释放对象：&lt;/p>
-&lt;ul>
-&lt;li>销毁了管理的 unique_ptr 对象&lt;/li>
-&lt;li>通过 operator= 或 reset () 赋值另一指针给管理的 unique_ptr 对象。&lt;/li>
-&lt;/ul>
-&lt;h3 id="shared_ptr">
+ 
+ &lt;a class="anchor" href="#unique_ptr"&gt;#&lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;std::unique_ptr 是通过指针占有并管理另一对象，并在 unique_ptr 离开作用域时释放该对象的智能指针。在下列两者之一发生时用关联的删除器释放对象：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;销毁了管理的 unique_ptr 对象&lt;/li&gt;
+&lt;li&gt;通过 operator= 或 reset () 赋值另一指针给管理的 unique_ptr 对象。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="shared_ptr"&gt;
  shared_ptr
- &lt;a class="anchor" href="#shared_ptr">#&lt;/a>
-&lt;/h3>
-&lt;p>std::shared_ptr 是通过指针保持对象共享所有权的智能指针。多个 shared_ptr 对象可占有同一对象。下列情况之一出现时销毁对象并解分配其内存：&lt;/p>
-&lt;ul>
-&lt;li>最后剩下的占有对象的 shared_ptr 被销毁；&lt;/li>
-&lt;li>最后剩下的占有对象的 shared_ptr 被通过 operator= 或 reset () 赋值为另一指针。&lt;/li>
-&lt;/ul>
-&lt;p>有两种方式创建 &lt;code>shared_ptr&lt;/code> ：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>( )
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> shared_ptr&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> sptr1( &lt;span style="color:#66d9ef">new&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> );
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 使用 make_shared 宏可以加速创建的过程
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75715e">// 因为 shared_ptr 主动分配内存并且保存引用计数 (reference count)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> shared_ptr&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> sptr2 &lt;span style="color:#f92672">=&lt;/span> make_shared&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>(&lt;span style="color:#ae81ff">100&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>参考：&lt;a href="https://blog.csdn.net/jcq521045349/article/details/88957222">C++ 智能指针 - 内存泄露的惨痛经历&lt;/a>&lt;/p></description></item><item><title>命名空间</title><link>https://kingye.me/study-cpp/docs/basic/grammar/keyword/namespace/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-cpp/docs/basic/grammar/keyword/namespace/</guid><description>&lt;h1 id="c-命名空间">
+ 
+ &lt;a class="anchor" href="#shared_ptr"&gt;#&lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;std::shared_ptr 是通过指针保持对象共享所有权的智能指针。多个 shared_ptr 对象可占有同一对象。下列情况之一出现时销毁对象并解分配其内存：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;最后剩下的占有对象的 shared_ptr 被销毁；&lt;/li&gt;
+&lt;li&gt;最后剩下的占有对象的 shared_ptr 被通过 operator= 或 reset () 赋值为另一指针。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;有两种方式创建 &lt;code&gt;shared_ptr&lt;/code&gt; ：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;( )
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; shared_ptr&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; sptr1( &lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; );
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 使用 make_shared 宏可以加速创建的过程
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; &lt;span style="color:#75715e"&gt;// 因为 shared_ptr 主动分配内存并且保存引用计数 (reference count)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; shared_ptr&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; sptr2 &lt;span style="color:#f92672"&gt;=&lt;/span&gt; make_shared&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt;(&lt;span style="color:#ae81ff"&gt;100&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：&lt;a href="https://blog.csdn.net/jcq521045349/article/details/88957222"&gt;C++ 智能指针 - 内存泄露的惨痛经历&lt;/a&gt;&lt;/p&gt;</description></item><item><title>命名空间</title><link>https://kingye.me/study-cpp/docs/basic/grammar/keyword/namespace/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-cpp/docs/basic/grammar/keyword/namespace/</guid><description>&lt;h1 id="c-命名空间"&gt;
  C++ 命名空间
- &lt;a class="anchor" href="#c-%e5%91%bd%e5%90%8d%e7%a9%ba%e9%97%b4">#&lt;/a>
-&lt;/h1>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 命名空间为变量、函数和其他声明提供了分离的的作用域。
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 命名空间可以嵌套使用。
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">namespace&lt;/span> First {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">namespace&lt;/span> Nested {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">foo&lt;/span>()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> printf(&lt;span style="color:#e6db74">&amp;#34;This is First::Nested::foo&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> } &lt;span style="color:#75715e">// 结束嵌套的命名空间Nested
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>} &lt;span style="color:#75715e">// 结束命名空间First
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">namespace&lt;/span> Second {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">foo&lt;/span>()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> printf(&lt;span style="color:#e6db74">&amp;#34;This is Second::foo&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">foo&lt;/span>()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> printf(&lt;span style="color:#e6db74">&amp;#34;This is global foo&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 如果没有特别指定，就从“Second”中取得所需的内容。
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> Second;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> foo(); &lt;span style="color:#75715e">// 显示“This is Second::foo”
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> First&lt;span style="color:#f92672">::&lt;/span>Nested&lt;span style="color:#f92672">::&lt;/span>foo(); &lt;span style="color:#75715e">// 显示“This is First::Nested::foo”
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#f92672">::&lt;/span>foo(); &lt;span style="color:#75715e">// 显示“This is global foo”
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>引用</title><link>https://kingye.me/study-cpp/docs/basic/grammar/keyword/reference/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-cpp/docs/basic/grammar/keyword/reference/</guid><description>&lt;h1 id="c-引用">
+ 
+ &lt;a class="anchor" href="#c-%e5%91%bd%e5%90%8d%e7%a9%ba%e9%97%b4"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// 命名空间为变量、函数和其他声明提供了分离的的作用域。
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// 命名空间可以嵌套使用。
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;namespace&lt;/span&gt; First {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;namespace&lt;/span&gt; Nested {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;foo&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; printf(&lt;span style="color:#e6db74"&gt;&amp;#34;This is First::Nested::foo&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;\n&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; } &lt;span style="color:#75715e"&gt;// 结束嵌套的命名空间Nested
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;} &lt;span style="color:#75715e"&gt;// 结束命名空间First
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;namespace&lt;/span&gt; Second {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;foo&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; printf(&lt;span style="color:#e6db74"&gt;&amp;#34;This is Second::foo&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;\n&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;foo&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; printf(&lt;span style="color:#e6db74"&gt;&amp;#34;This is global foo&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;\n&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 如果没有特别指定，就从“Second”中取得所需的内容。
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;using&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;namespace&lt;/span&gt; Second;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; foo(); &lt;span style="color:#75715e"&gt;// 显示“This is Second::foo”
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; First&lt;span style="color:#f92672"&gt;::&lt;/span&gt;Nested&lt;span style="color:#f92672"&gt;::&lt;/span&gt;foo(); &lt;span style="color:#75715e"&gt;// 显示“This is First::Nested::foo”
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; &lt;span style="color:#f92672"&gt;::&lt;/span&gt;foo(); &lt;span style="color:#75715e"&gt;// 显示“This is global foo”
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>引用</title><link>https://kingye.me/study-cpp/docs/basic/grammar/keyword/reference/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-cpp/docs/basic/grammar/keyword/reference/</guid><description>&lt;h1 id="c-引用"&gt;
  C++ 引用
- &lt;a class="anchor" href="#c-%e5%bc%95%e7%94%a8">#&lt;/a>
-&lt;/h1>
-&lt;ul>
-&lt;li>
-&lt;p>引用是一种特殊的指针类型，一旦被定义就不能重新赋值，并且不能被设置为空值。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>使用引用时的语法与原变量相同&lt;/p>
-&lt;ul>
-&lt;li>对引用类型进行解引用时，不需要使用 &lt;code>*&lt;/code>&lt;/li>
-&lt;li>赋值时也不需要用 &lt;code>&amp;amp;&lt;/code> 来取地址&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> std;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>string foo &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;I am foo&amp;#34;&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>string bar &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;I am bar&amp;#34;&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>string&lt;span style="color:#f92672">&amp;amp;&lt;/span> fooRef &lt;span style="color:#f92672">=&lt;/span> foo; &lt;span style="color:#75715e">// 建立了一个对foo的引用。
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>fooRef &lt;span style="color:#f92672">+=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;. Hi!&amp;#34;&lt;/span>; &lt;span style="color:#75715e">// 通过引用来修改foo的值
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> fooRef; &lt;span style="color:#75715e">// &amp;#34;I am foo. Hi!&amp;#34;
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 这句话的并不会改变fooRef的指向，其效果与“foo = bar”相同。
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 也就是说，在执行这条语句之后，foo == &amp;#34;I am bar&amp;#34;。
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>fooRef &lt;span style="color:#f92672">=&lt;/span> bar;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
-&lt;li>
-&lt;p>不能修改一个常量引用的值&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">const&lt;/span> string&lt;span style="color:#f92672">&amp;amp;&lt;/span> barRef &lt;span style="color:#f92672">=&lt;/span> bar; &lt;span style="color:#75715e">// 建立指向bar的常量引用。
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 和C语言中一样，（指针和引用）声明为常量时，对应的值不能被修改。
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>barRef &lt;span style="color:#f92672">+=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;. Hi!&amp;#34;&lt;/span>; &lt;span style="color:#75715e">// 这是错误的，不能修改一个常量引用的值。
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+ 
+ &lt;a class="anchor" href="#c-%e5%bc%95%e7%94%a8"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;引用是一种特殊的指针类型，一旦被定义就不能重新赋值，并且不能被设置为空值。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用引用时的语法与原变量相同&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;对引用类型进行解引用时，不需要使用 &lt;code&gt;*&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;赋值时也不需要用 &lt;code&gt;&amp;amp;&lt;/code&gt; 来取地址&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;using&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;namespace&lt;/span&gt; std;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;string foo &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;I am foo&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;string bar &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;I am bar&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;string&lt;span style="color:#f92672"&gt;&amp;amp;&lt;/span&gt; fooRef &lt;span style="color:#f92672"&gt;=&lt;/span&gt; foo; &lt;span style="color:#75715e"&gt;// 建立了一个对foo的引用。
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;fooRef &lt;span style="color:#f92672"&gt;+=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;. Hi!&amp;#34;&lt;/span&gt;; &lt;span style="color:#75715e"&gt;// 通过引用来修改foo的值
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;cout &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; fooRef; &lt;span style="color:#75715e"&gt;// &amp;#34;I am foo. Hi!&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// 这句话的并不会改变fooRef的指向，其效果与“foo = bar”相同。
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// 也就是说，在执行这条语句之后，foo == &amp;#34;I am bar&amp;#34;。
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;fooRef &lt;span style="color:#f92672"&gt;=&lt;/span&gt; bar;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不能修改一个常量引用的值&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;const&lt;/span&gt; string&lt;span style="color:#f92672"&gt;&amp;amp;&lt;/span&gt; barRef &lt;span style="color:#f92672"&gt;=&lt;/span&gt; bar; &lt;span style="color:#75715e"&gt;// 建立指向bar的常量引用。
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// 和C语言中一样，（指针和引用）声明为常量时，对应的值不能被修改。
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;barRef &lt;span style="color:#f92672"&gt;+=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;. Hi!&amp;#34;&lt;/span&gt;; &lt;span style="color:#75715e"&gt;// 这是错误的，不能修改一个常量引用的值。
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
