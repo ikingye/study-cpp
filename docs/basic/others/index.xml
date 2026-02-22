@@ -1,60 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.4 其他 on C++ 学习笔记</title><link>https://kingye.me/study-cpp/docs/basic/others/</link><description>Recent content in 1.4 其他 on C++ 学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/study-cpp/docs/basic/others/index.xml" rel="self" type="application/rss+xml"/><item><title>版本</title><link>https://kingye.me/study-cpp/docs/basic/others/version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-cpp/docs/basic/others/version/</guid><description>&lt;h1 id="c-版本"&gt;
- C++ 版本
- 
- &lt;a class="anchor" href="#c-%e7%89%88%e6%9c%ac"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h2 id="c-reference"&gt;
- &lt;a href="https://en.cppreference.com/w/cpp"&gt;C++ reference&lt;/a&gt;
- 
- &lt;a class="anchor" href="#c-reference"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;h3 id="c23"&gt;
- C++23
- 
- &lt;a class="anchor" href="#c23"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.4 其他 on C++ 学习笔记</title><link>https://kingye.me/study-cpp/docs/basic/others/</link><description>Recent content in 1.4 其他 on C++ 学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/study-cpp/docs/basic/others/index.xml" rel="self" type="application/rss+xml"/><item><title>版本</title><link>https://kingye.me/study-cpp/docs/basic/others/version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-cpp/docs/basic/others/version/</guid><description>&lt;h1 id="c-版本"&gt;C++ 版本&lt;a class="anchor" href="#c-%e7%89%88%e6%9c%ac"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="c-reference"&gt;&lt;a href="https://en.cppreference.com/w/cpp"&gt;C++ reference&lt;/a&gt;&lt;a class="anchor" href="#c-reference"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="c23"&gt;C++23&lt;a class="anchor" href="#c23"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;hr&gt;
-&lt;h3 id="c20"&gt;
- C++20
- 
- &lt;a class="anchor" href="#c20"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="c20"&gt;C++20&lt;a class="anchor" href="#c20"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;hr&gt;
-&lt;h3 id="c17"&gt;
- C++17
- 
- &lt;a class="anchor" href="#c17"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="c17"&gt;C++17&lt;a class="anchor" href="#c17"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;hr&gt;
-&lt;h3 id="c14"&gt;
- C++14
- 
- &lt;a class="anchor" href="#c14"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="c14"&gt;C++14&lt;a class="anchor" href="#c14"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;hr&gt;
-&lt;h3 id="c11"&gt;
- C++11
- 
- &lt;a class="anchor" href="#c11"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="c11"&gt;C++11&lt;a class="anchor" href="#c11"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;hr&gt;
-&lt;h3 id="c03"&gt;
- C++03
- 
- &lt;a class="anchor" href="#c03"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="c03"&gt;C++03&lt;a class="anchor" href="#c03"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;hr&gt;
-&lt;h3 id="c98"&gt;
- C++98
- 
- &lt;a class="anchor" href="#c98"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;</description></item></channel></rss>
+&lt;h3 id="c98"&gt;C++98&lt;a class="anchor" href="#c98"&gt;#&lt;/a&gt;&lt;/h3&gt;</description></item></channel></rss>
